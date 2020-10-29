@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,5 +27,17 @@ public class PlayerController : MonoBehaviour
         //Up/Down movement
         transform.position = transform.position + new Vector3(0, verticalInput * speed * Time.deltaTime, 0);
         //rb.velocity = new Vector2(verticalInput * speed * Time.deltaTime, rb.velocity.x);
+
+
+    }
+
+    //load new area
+    private void OnTriggerEnter2D(Collider2D col)
+    {  
+        if (col.gameObject.tag.Equals("AreaTrigger"))
+        {
+            Debug.Log("stair collision");
+            col.gameObject.GetComponent<SceneTransition>().LoadNextScene();
+        }
     }
 }
