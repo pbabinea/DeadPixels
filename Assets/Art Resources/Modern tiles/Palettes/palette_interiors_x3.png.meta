@@ -1,0 +1,3514 @@
+fileFormatVersion: 2
+guid: 0ebdadcb55d26c447be74c3951fd7542
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8092156318984260547
+    second: palette_interiors_x3_0
+  - first:
+      213: 3122801344698385587
+    second: palette_interiors_x3_1
+  - first:
+      213: 5176453702411241555
+    second: palette_interiors_x3_2
+  - first:
+      213: -991480110041105578
+    second: palette_interiors_x3_3
+  - first:
+      213: -1203679632162720048
+    second: palette_interiors_x3_4
+  - first:
+      213: -6766289290878731913
+    second: palette_interiors_x3_5
+  - first:
+      213: -3698475760759910135
+    second: palette_interiors_x3_6
+  - first:
+      213: -4176965499036269493
+    second: palette_interiors_x3_7
+  - first:
+      213: -8677521154067789923
+    second: palette_interiors_x3_8
+  - first:
+      213: 6707866438472141252
+    second: palette_interiors_x3_9
+  - first:
+      213: 1642145706546887626
+    second: palette_interiors_x3_10
+  - first:
+      213: 7674606405153339710
+    second: palette_interiors_x3_11
+  - first:
+      213: -7156795420979980276
+    second: palette_interiors_x3_12
+  - first:
+      213: 8592915169621957617
+    second: palette_interiors_x3_13
+  - first:
+      213: -7942008842034552116
+    second: palette_interiors_x3_14
+  - first:
+      213: -854269851240526164
+    second: palette_interiors_x3_15
+  - first:
+      213: 6622352754627422390
+    second: palette_interiors_x3_16
+  - first:
+      213: -7122015581208758386
+    second: palette_interiors_x3_17
+  - first:
+      213: 7169707676534826058
+    second: palette_interiors_x3_18
+  - first:
+      213: -9207042541093982307
+    second: palette_interiors_x3_19
+  - first:
+      213: 8314961247590394048
+    second: palette_interiors_x3_20
+  - first:
+      213: 7439820654087428435
+    second: palette_interiors_x3_21
+  - first:
+      213: -1261210658388036446
+    second: palette_interiors_x3_22
+  - first:
+      213: 3167896726293984637
+    second: palette_interiors_x3_23
+  - first:
+      213: -5704746256917714059
+    second: palette_interiors_x3_24
+  - first:
+      213: 4598422232382579914
+    second: palette_interiors_x3_25
+  - first:
+      213: -6084129250821611602
+    second: palette_interiors_x3_26
+  - first:
+      213: 6895436402501877234
+    second: palette_interiors_x3_27
+  - first:
+      213: -7565339066224335562
+    second: palette_interiors_x3_28
+  - first:
+      213: 6083817535710856836
+    second: palette_interiors_x3_29
+  - first:
+      213: 4362835125644730142
+    second: palette_interiors_x3_30
+  - first:
+      213: -8711745110963967465
+    second: palette_interiors_x3_31
+  - first:
+      213: -5373784400976309984
+    second: palette_interiors_x3_32
+  - first:
+      213: -6532431836684406678
+    second: palette_interiors_x3_33
+  - first:
+      213: -8356648252018332660
+    second: palette_interiors_x3_34
+  - first:
+      213: -4178284568850178034
+    second: palette_interiors_x3_35
+  - first:
+      213: 1959296770470921781
+    second: palette_interiors_x3_36
+  - first:
+      213: -5289862959457645219
+    second: palette_interiors_x3_37
+  - first:
+      213: 39944015327336301
+    second: palette_interiors_x3_38
+  - first:
+      213: 5482587806033897077
+    second: palette_interiors_x3_39
+  - first:
+      213: 5924651791030777822
+    second: palette_interiors_x3_40
+  - first:
+      213: 680780720152162119
+    second: palette_interiors_x3_41
+  - first:
+      213: -8359645417232975134
+    second: palette_interiors_x3_42
+  - first:
+      213: 6266658492610089430
+    second: palette_interiors_x3_43
+  - first:
+      213: -1446711671006834537
+    second: palette_interiors_x3_44
+  - first:
+      213: -1204899116348360048
+    second: palette_interiors_x3_45
+  - first:
+      213: 9188828038674008540
+    second: palette_interiors_x3_46
+  - first:
+      213: -289205063140267347
+    second: palette_interiors_x3_47
+  - first:
+      213: 277582721172750693
+    second: palette_interiors_x3_48
+  - first:
+      213: -8198998727660146629
+    second: palette_interiors_x3_49
+  - first:
+      213: -2785019556127893300
+    second: palette_interiors_x3_50
+  - first:
+      213: -2256608359007560455
+    second: palette_interiors_x3_51
+  - first:
+      213: -942858725043666813
+    second: palette_interiors_x3_52
+  - first:
+      213: -224395979216524211
+    second: palette_interiors_x3_53
+  - first:
+      213: 1896370086311851264
+    second: palette_interiors_x3_54
+  - first:
+      213: -7943208437744545351
+    second: palette_interiors_x3_55
+  - first:
+      213: 405717774071559890
+    second: palette_interiors_x3_56
+  - first:
+      213: -5970369614747553337
+    second: palette_interiors_x3_57
+  - first:
+      213: 4802745697056783580
+    second: palette_interiors_x3_58
+  - first:
+      213: -6932603268012689819
+    second: palette_interiors_x3_59
+  - first:
+      213: -83646531164998817
+    second: palette_interiors_x3_60
+  - first:
+      213: -7165817088085041483
+    second: palette_interiors_x3_61
+  - first:
+      213: 3982188641660347964
+    second: palette_interiors_x3_62
+  - first:
+      213: -8221841644729215702
+    second: palette_interiors_x3_63
+  - first:
+      213: -738780946429239895
+    second: palette_interiors_x3_64
+  - first:
+      213: 2674070468692247034
+    second: palette_interiors_x3_65
+  - first:
+      213: -1739091860357693791
+    second: palette_interiors_x3_66
+  - first:
+      213: -5394233598097523114
+    second: palette_interiors_x3_67
+  - first:
+      213: 3533575274782194264
+    second: palette_interiors_x3_68
+  - first:
+      213: 1267206879916783381
+    second: palette_interiors_x3_69
+  - first:
+      213: 3726008405965092433
+    second: palette_interiors_x3_70
+  - first:
+      213: -5951136156079654167
+    second: palette_interiors_x3_71
+  - first:
+      213: 6133935023860244121
+    second: palette_interiors_x3_72
+  - first:
+      213: 8634121641012583425
+    second: palette_interiors_x3_73
+  - first:
+      213: 5908135089192575802
+    second: palette_interiors_x3_74
+  - first:
+      213: 93452193049692771
+    second: palette_interiors_x3_75
+  - first:
+      213: 5763680545456194362
+    second: palette_interiors_x3_76
+  - first:
+      213: -6313645602177780211
+    second: palette_interiors_x3_77
+  - first:
+      213: -1491630482753277959
+    second: palette_interiors_x3_78
+  - first:
+      213: -7761727247206157359
+    second: palette_interiors_x3_79
+  - first:
+      213: -8627028433346530500
+    second: palette_interiors_x3_80
+  - first:
+      213: -5108833352722856720
+    second: palette_interiors_x3_81
+  - first:
+      213: -2939559420502671991
+    second: palette_interiors_x3_82
+  - first:
+      213: 7994234107667165793
+    second: palette_interiors_x3_83
+  - first:
+      213: -7247091234185606899
+    second: palette_interiors_x3_84
+  - first:
+      213: -7168844036290105012
+    second: palette_interiors_x3_85
+  - first:
+      213: -131490149865751642
+    second: palette_interiors_x3_86
+  - first:
+      213: -4722960731137659939
+    second: palette_interiors_x3_87
+  - first:
+      213: -1191273374191719008
+    second: palette_interiors_x3_88
+  - first:
+      213: 3241828150693633670
+    second: palette_interiors_x3_89
+  - first:
+      213: -1097687064496668089
+    second: palette_interiors_x3_90
+  - first:
+      213: -7248051677255552787
+    second: palette_interiors_x3_91
+  - first:
+      213: 6194070942102154333
+    second: palette_interiors_x3_92
+  - first:
+      213: -1770906748541190551
+    second: palette_interiors_x3_93
+  - first:
+      213: -7025329307528214882
+    second: palette_interiors_x3_94
+  - first:
+      213: -5571386010924134106
+    second: palette_interiors_x3_95
+  - first:
+      213: 5254647043123786948
+    second: palette_interiors_x3_96
+  - first:
+      213: -5619931390895280336
+    second: palette_interiors_x3_97
+  - first:
+      213: -6650510538541701094
+    second: palette_interiors_x3_98
+  - first:
+      213: 1444547559172480436
+    second: palette_interiors_x3_99
+  - first:
+      213: 3321164252509332286
+    second: palette_interiors_x3_100
+  - first:
+      213: -40598524283846677
+    second: palette_interiors_x3_101
+  - first:
+      213: 1466628694852651822
+    second: palette_interiors_x3_102
+  - first:
+      213: -7506262606096303505
+    second: palette_interiors_x3_103
+  - first:
+      213: -1124883433362857328
+    second: palette_interiors_x3_104
+  - first:
+      213: 3364816031087778838
+    second: palette_interiors_x3_105
+  - first:
+      213: -698494539019439467
+    second: palette_interiors_x3_106
+  - first:
+      213: 8968629072354580467
+    second: palette_interiors_x3_107
+  - first:
+      213: -1482569946108529649
+    second: palette_interiors_x3_108
+  - first:
+      213: -2883775030334705441
+    second: palette_interiors_x3_109
+  - first:
+      213: 5793876039521980925
+    second: palette_interiors_x3_110
+  - first:
+      213: -7637028835418852318
+    second: palette_interiors_x3_111
+  - first:
+      213: -1726901432908643017
+    second: palette_interiors_x3_112
+  - first:
+      213: 3020162949702294424
+    second: palette_interiors_x3_113
+  - first:
+      213: 3751552213283232317
+    second: palette_interiors_x3_114
+  - first:
+      213: -3411449899835334395
+    second: palette_interiors_x3_115
+  - first:
+      213: 1992390299185675412
+    second: palette_interiors_x3_116
+  - first:
+      213: -303580450315110755
+    second: palette_interiors_x3_117
+  - first:
+      213: 1766295797187738491
+    second: palette_interiors_x3_118
+  - first:
+      213: -1637604399438559020
+    second: palette_interiors_x3_119
+  - first:
+      213: 6173911630812977031
+    second: palette_interiors_x3_120
+  - first:
+      213: -9221716858326508698
+    second: palette_interiors_x3_121
+  - first:
+      213: 7421718084395020470
+    second: palette_interiors_x3_122
+  - first:
+      213: -6778768761028114213
+    second: palette_interiors_x3_123
+  - first:
+      213: 8251346535406331881
+    second: palette_interiors_x3_124
+  - first:
+      213: 736193831962426150
+    second: palette_interiors_x3_125
+  - first:
+      213: 3938038682279097265
+    second: palette_interiors_x3_126
+  - first:
+      213: -8636782921482184147
+    second: palette_interiors_x3_127
+  - first:
+      213: 5041095587783130059
+    second: palette_interiors_x3_128
+  - first:
+      213: 2612374118871816159
+    second: palette_interiors_x3_129
+  - first:
+      213: -5069839796485231050
+    second: palette_interiors_x3_130
+  - first:
+      213: -4129880894765788422
+    second: palette_interiors_x3_131
+  - first:
+      213: 4979239410794528286
+    second: palette_interiors_x3_132
+  - first:
+      213: -41061596770282408
+    second: palette_interiors_x3_133
+  - first:
+      213: 1345210422141934685
+    second: palette_interiors_x3_134
+  - first:
+      213: -3072224448146953958
+    second: palette_interiors_x3_135
+  - first:
+      213: 1314952228790844529
+    second: palette_interiors_x3_136
+  - first:
+      213: 2120911459702041376
+    second: palette_interiors_x3_137
+  - first:
+      213: 7163940421534019611
+    second: palette_interiors_x3_138
+  - first:
+      213: 6638953399266415790
+    second: palette_interiors_x3_139
+  - first:
+      213: -4454491811053224195
+    second: palette_interiors_x3_140
+  - first:
+      213: -5657072424097939655
+    second: palette_interiors_x3_141
+  - first:
+      213: -7784493163557345704
+    second: palette_interiors_x3_142
+  - first:
+      213: 7545869044699174596
+    second: palette_interiors_x3_143
+  - first:
+      213: -4071858005145510963
+    second: palette_interiors_x3_144
+  - first:
+      213: -3147091243077278045
+    second: palette_interiors_x3_145
+  - first:
+      213: 3132554477726443565
+    second: palette_interiors_x3_146
+  - first:
+      213: -3872617157396047886
+    second: palette_interiors_x3_147
+  - first:
+      213: -8127212695982488945
+    second: palette_interiors_x3_148
+  - first:
+      213: 3078735338070296051
+    second: palette_interiors_x3_149
+  - first:
+      213: -1548259577393331356
+    second: palette_interiors_x3_150
+  - first:
+      213: -8680013143729007545
+    second: palette_interiors_x3_151
+  - first:
+      213: 5452635625422174670
+    second: palette_interiors_x3_152
+  - first:
+      213: 2726689749530040721
+    second: palette_interiors_x3_153
+  - first:
+      213: 4399141853434994421
+    second: palette_interiors_x3_154
+  - first:
+      213: -7581069904103305323
+    second: palette_interiors_x3_155
+  - first:
+      213: 8780581420933885412
+    second: palette_interiors_x3_156
+  - first:
+      213: 7640601170522819360
+    second: palette_interiors_x3_157
+  - first:
+      213: 4694758488546509181
+    second: palette_interiors_x3_158
+  - first:
+      213: -6035818934376802014
+    second: palette_interiors_x3_159
+  - first:
+      213: 2437159174836401584
+    second: palette_interiors_x3_160
+  - first:
+      213: 7103343844751704654
+    second: palette_interiors_x3_161
+  - first:
+      213: 5893681676407951336
+    second: palette_interiors_x3_162
+  - first:
+      213: -3158162485936227560
+    second: palette_interiors_x3_163
+  - first:
+      213: -3991195630052427403
+    second: palette_interiors_x3_164
+  - first:
+      213: -7332905755415194740
+    second: palette_interiors_x3_165
+  - first:
+      213: -2714754576326154524
+    second: palette_interiors_x3_166
+  - first:
+      213: 2130588880132249721
+    second: palette_interiors_x3_167
+  - first:
+      213: 8160254451865764639
+    second: palette_interiors_x3_168
+  - first:
+      213: -7804461039714571691
+    second: palette_interiors_x3_169
+  - first:
+      213: -5366554946169959151
+    second: palette_interiors_x3_170
+  - first:
+      213: 1072543188039792714
+    second: palette_interiors_x3_171
+  - first:
+      213: 4383681878184803198
+    second: palette_interiors_x3_172
+  - first:
+      213: 6360089118548799557
+    second: palette_interiors_x3_173
+  - first:
+      213: 1971404024291073614
+    second: palette_interiors_x3_174
+  - first:
+      213: 1888976789392042974
+    second: palette_interiors_x3_175
+  - first:
+      213: -2497009635991925851
+    second: palette_interiors_x3_176
+  - first:
+      213: -8192832929850406177
+    second: palette_interiors_x3_177
+  - first:
+      213: 7568843534599163067
+    second: palette_interiors_x3_178
+  - first:
+      213: 727897189835519253
+    second: palette_interiors_x3_179
+  - first:
+      213: 6988087871532570823
+    second: palette_interiors_x3_180
+  - first:
+      213: 8710587132969240741
+    second: palette_interiors_x3_181
+  - first:
+      213: -5504329541846555064
+    second: palette_interiors_x3_182
+  - first:
+      213: -2718951976191123423
+    second: palette_interiors_x3_183
+  - first:
+      213: 1946635468638409402
+    second: palette_interiors_x3_184
+  - first:
+      213: -5702251636201479359
+    second: palette_interiors_x3_185
+  - first:
+      213: 2283513047451212313
+    second: palette_interiors_x3_186
+  - first:
+      213: -833366737879894566
+    second: palette_interiors_x3_187
+  - first:
+      213: -5185285367176516827
+    second: palette_interiors_x3_188
+  - first:
+      213: 1706370673578056156
+    second: palette_interiors_x3_189
+  - first:
+      213: 5762925890686515792
+    second: palette_interiors_x3_190
+  - first:
+      213: -5822571268032289379
+    second: palette_interiors_x3_191
+  - first:
+      213: -2767956316038145100
+    second: palette_interiors_x3_192
+  - first:
+      213: 4348681796318306822
+    second: palette_interiors_x3_193
+  - first:
+      213: 287654545276820213
+    second: palette_interiors_x3_194
+  - first:
+      213: -7590250147693759972
+    second: palette_interiors_x3_195
+  - first:
+      213: 7386440052606948317
+    second: palette_interiors_x3_196
+  - first:
+      213: -1219534236328472186
+    second: palette_interiors_x3_197
+  - first:
+      213: 5727776241557045818
+    second: palette_interiors_x3_198
+  - first:
+      213: -4706944186630401845
+    second: palette_interiors_x3_199
+  - first:
+      213: -937587234292083506
+    second: palette_interiors_x3_200
+  - first:
+      213: -4011516764315156561
+    second: palette_interiors_x3_201
+  - first:
+      213: 4288376205053968258
+    second: palette_interiors_x3_202
+  - first:
+      213: -8078642764228301536
+    second: palette_interiors_x3_203
+  - first:
+      213: 8387949540171011907
+    second: palette_interiors_x3_204
+  - first:
+      213: 4482241360133525528
+    second: palette_interiors_x3_205
+  - first:
+      213: -3652730015024428182
+    second: palette_interiors_x3_206
+  - first:
+      213: 4104832401856367900
+    second: palette_interiors_x3_207
+  - first:
+      213: 8634250676130837221
+    second: palette_interiors_x3_208
+  - first:
+      213: 6028918383611359160
+    second: palette_interiors_x3_209
+  - first:
+      213: -4051025569813980341
+    second: palette_interiors_x3_210
+  - first:
+      213: 8121489153351566376
+    second: palette_interiors_x3_211
+  - first:
+      213: 5666866638367851692
+    second: palette_interiors_x3_212
+  - first:
+      213: -7443986495242881944
+    second: palette_interiors_x3_213
+  - first:
+      213: 4861033751069526538
+    second: palette_interiors_x3_214
+  - first:
+      213: 6704433352439895405
+    second: palette_interiors_x3_215
+  - first:
+      213: -7841174430206871684
+    second: palette_interiors_x3_216
+  - first:
+      213: -6861125730673672267
+    second: palette_interiors_x3_217
+  - first:
+      213: -7470997075742531237
+    second: palette_interiors_x3_218
+  - first:
+      213: -7750449755223977572
+    second: palette_interiors_x3_219
+  - first:
+      213: 5294248804154206027
+    second: palette_interiors_x3_220
+  - first:
+      213: 579828292007588127
+    second: palette_interiors_x3_221
+  - first:
+      213: 775208039162207989
+    second: palette_interiors_x3_222
+  - first:
+      213: 4641086547719296034
+    second: palette_interiors_x3_223
+  - first:
+      213: 952273213863538073
+    second: palette_interiors_x3_224
+  - first:
+      213: 3327872138818010396
+    second: palette_interiors_x3_225
+  - first:
+      213: 2456630755109940876
+    second: palette_interiors_x3_226
+  - first:
+      213: -6948454504146621588
+    second: palette_interiors_x3_227
+  - first:
+      213: -4872940263924752205
+    second: palette_interiors_x3_228
+  - first:
+      213: 4425942538940362724
+    second: palette_interiors_x3_229
+  - first:
+      213: 4531187407107174714
+    second: palette_interiors_x3_230
+  - first:
+      213: 4092047268142993053
+    second: palette_interiors_x3_231
+  - first:
+      213: 4092925313711004284
+    second: palette_interiors_x3_232
+  - first:
+      213: -4003226283900398259
+    second: palette_interiors_x3_233
+  - first:
+      213: -856061072563355500
+    second: palette_interiors_x3_234
+  - first:
+      213: 3565886015208562668
+    second: palette_interiors_x3_235
+  - first:
+      213: -6043385693428474008
+    second: palette_interiors_x3_236
+  - first:
+      213: -5574713398822886483
+    second: palette_interiors_x3_237
+  - first:
+      213: -217507334266878567
+    second: palette_interiors_x3_238
+  - first:
+      213: -8545242982487934539
+    second: palette_interiors_x3_239
+  - first:
+      213: 8984150056020956905
+    second: palette_interiors_x3_240
+  - first:
+      213: 5612582857924174033
+    second: palette_interiors_x3_241
+  - first:
+      213: 4635757963023430648
+    second: palette_interiors_x3_242
+  - first:
+      213: -2070390061253182983
+    second: palette_interiors_x3_243
+  - first:
+      213: -2723817638384866557
+    second: palette_interiors_x3_244
+  - first:
+      213: -3618830543322748528
+    second: palette_interiors_x3_245
+  - first:
+      213: 4602202127206859507
+    second: palette_interiors_x3_246
+  - first:
+      213: -3471210669902348526
+    second: palette_interiors_x3_247
+  - first:
+      213: 4232563718337044459
+    second: palette_interiors_x3_248
+  - first:
+      213: -1236463901623663952
+    second: palette_interiors_x3_249
+  - first:
+      213: -6216238945003020306
+    second: palette_interiors_x3_250
+  - first:
+      213: -2173533165362085726
+    second: palette_interiors_x3_251
+  - first:
+      213: 2869576247573394055
+    second: palette_interiors_x3_252
+  - first:
+      213: 4000479574359382831
+    second: palette_interiors_x3_253
+  - first:
+      213: -5179160867139246968
+    second: palette_interiors_x3_254
+  - first:
+      213: 9147152235834088385
+    second: palette_interiors_x3_255
+  - first:
+      213: 3849868123822529568
+    second: palette_interiors_x3_256
+  - first:
+      213: 8570672087115613583
+    second: palette_interiors_x3_257
+  - first:
+      213: 6148582843755835042
+    second: palette_interiors_x3_258
+  - first:
+      213: -837534357169695707
+    second: palette_interiors_x3_259
+  - first:
+      213: -1769348169004593021
+    second: palette_interiors_x3_260
+  - first:
+      213: 2162897207748652495
+    second: palette_interiors_x3_261
+  - first:
+      213: -2299318214187343114
+    second: palette_interiors_x3_262
+  - first:
+      213: -936128094291966988
+    second: palette_interiors_x3_263
+  - first:
+      213: -9066261057302071062
+    second: palette_interiors_x3_264
+  - first:
+      213: 464236918742969180
+    second: palette_interiors_x3_265
+  - first:
+      213: -7031787516669318983
+    second: palette_interiors_x3_266
+  - first:
+      213: 3931014254816054701
+    second: palette_interiors_x3_267
+  - first:
+      213: -3096153713734135519
+    second: palette_interiors_x3_268
+  - first:
+      213: -8741654244347009221
+    second: palette_interiors_x3_269
+  - first:
+      213: 2242139359179545309
+    second: palette_interiors_x3_270
+  - first:
+      213: -3453065990772556470
+    second: palette_interiors_x3_271
+  - first:
+      213: 3172182239444604264
+    second: palette_interiors_x3_272
+  - first:
+      213: -7342580958929843967
+    second: palette_interiors_x3_273
+  - first:
+      213: 9222265797131259474
+    second: palette_interiors_x3_274
+  - first:
+      213: 349385992176597736
+    second: palette_interiors_x3_275
+  - first:
+      213: 596367738837962248
+    second: palette_interiors_x3_276
+  - first:
+      213: 7558540344860474262
+    second: palette_interiors_x3_277
+  - first:
+      213: 1013862230895522196
+    second: palette_interiors_x3_278
+  - first:
+      213: -2601122161304526262
+    second: palette_interiors_x3_279
+  - first:
+      213: 9178514155156552984
+    second: palette_interiors_x3_280
+  - first:
+      213: -3868288321900454509
+    second: palette_interiors_x3_281
+  - first:
+      213: -7870791031658013213
+    second: palette_interiors_x3_282
+  - first:
+      213: -7581483241219016165
+    second: palette_interiors_x3_283
+  - first:
+      213: -3411848628071172637
+    second: palette_interiors_x3_284
+  - first:
+      213: 3153592570424412224
+    second: palette_interiors_x3_285
+  - first:
+      213: 6353081044854601286
+    second: palette_interiors_x3_286
+  - first:
+      213: 1540143801078085211
+    second: palette_interiors_x3_287
+  - first:
+      213: -3136271604388769630
+    second: palette_interiors_x3_288
+  - first:
+      213: -3188725345709475078
+    second: palette_interiors_x3_289
+  - first:
+      213: 2093388058273392867
+    second: palette_interiors_x3_290
+  - first:
+      213: 4787933142315134118
+    second: palette_interiors_x3_291
+  - first:
+      213: 3092457307300982618
+    second: palette_interiors_x3_292
+  - first:
+      213: 5404920655066743329
+    second: palette_interiors_x3_293
+  - first:
+      213: -812117316730174364
+    second: palette_interiors_x3_294
+  - first:
+      213: -7009606001123554844
+    second: palette_interiors_x3_295
+  - first:
+      213: 9204974662081738802
+    second: palette_interiors_x3_296
+  - first:
+      213: -24916957299746002
+    second: palette_interiors_x3_297
+  - first:
+      213: 1176255149514820738
+    second: palette_interiors_x3_298
+  - first:
+      213: -3770154637260368273
+    second: palette_interiors_x3_299
+  - first:
+      213: -6445754459316134634
+    second: palette_interiors_x3_300
+  - first:
+      213: 5216695676867816753
+    second: palette_interiors_x3_301
+  - first:
+      213: -8127413357058742125
+    second: palette_interiors_x3_302
+  - first:
+      213: -5836786546893282485
+    second: palette_interiors_x3_303
+  - first:
+      213: 7008131112496304752
+    second: palette_interiors_x3_304
+  - first:
+      213: 5129632868467440128
+    second: palette_interiors_x3_305
+  - first:
+      213: 198396450247093645
+    second: palette_interiors_x3_306
+  - first:
+      213: 8121239145669459154
+    second: palette_interiors_x3_307
+  - first:
+      213: -7706222351669202019
+    second: palette_interiors_x3_308
+  - first:
+      213: 2672186649564430786
+    second: palette_interiors_x3_309
+  - first:
+      213: -158110073793710943
+    second: palette_interiors_x3_310
+  - first:
+      213: -8306364130082238172
+    second: palette_interiors_x3_311
+  - first:
+      213: 5090219791915214707
+    second: palette_interiors_x3_312
+  - first:
+      213: -2265303102274704829
+    second: palette_interiors_x3_313
+  - first:
+      213: 7847099372156278557
+    second: palette_interiors_x3_314
+  - first:
+      213: 8039648317258591141
+    second: palette_interiors_x3_315
+  - first:
+      213: -2921448227591250884
+    second: palette_interiors_x3_316
+  - first:
+      213: 5140918601910167822
+    second: palette_interiors_x3_317
+  - first:
+      213: 5388762474744563686
+    second: palette_interiors_x3_318
+  - first:
+      213: -8225526332280462871
+    second: palette_interiors_x3_319
+  - first:
+      213: 3597107999453463077
+    second: palette_interiors_x3_320
+  - first:
+      213: -14946718731212040
+    second: palette_interiors_x3_321
+  - first:
+      213: 8440086003645053103
+    second: palette_interiors_x3_322
+  - first:
+      213: -8629406059772084643
+    second: palette_interiors_x3_323
+  - first:
+      213: -6346556409738502656
+    second: palette_interiors_x3_324
+  - first:
+      213: 9064395775452022693
+    second: palette_interiors_x3_325
+  - first:
+      213: -7377128846668671434
+    second: palette_interiors_x3_326
+  - first:
+      213: 8841361406040394320
+    second: palette_interiors_x3_327
+  - first:
+      213: 7735696030404439816
+    second: palette_interiors_x3_328
+  - first:
+      213: -141725054555746611
+    second: palette_interiors_x3_329
+  - first:
+      213: 5074781821658640192
+    second: palette_interiors_x3_330
+  - first:
+      213: -3882102086746817321
+    second: palette_interiors_x3_331
+  - first:
+      213: 7894309368012274820
+    second: palette_interiors_x3_332
+  - first:
+      213: 1409043119996004681
+    second: palette_interiors_x3_333
+  - first:
+      213: 6311651379786707329
+    second: palette_interiors_x3_334
+  - first:
+      213: -8833654524857125754
+    second: palette_interiors_x3_335
+  - first:
+      213: -8368922132768461595
+    second: palette_interiors_x3_336
+  - first:
+      213: -888948331349643358
+    second: palette_interiors_x3_337
+  - first:
+      213: 8789145836540816197
+    second: palette_interiors_x3_338
+  - first:
+      213: -3699153062335199146
+    second: palette_interiors_x3_339
+  - first:
+      213: 1794411380534970413
+    second: palette_interiors_x3_340
+  - first:
+      213: -7405143860801508997
+    second: palette_interiors_x3_341
+  - first:
+      213: 1598953788591737176
+    second: palette_interiors_x3_342
+  - first:
+      213: -6053717063102408790
+    second: palette_interiors_x3_343
+  - first:
+      213: 2849212236570662364
+    second: palette_interiors_x3_344
+  - first:
+      213: 6616410860329147517
+    second: palette_interiors_x3_345
+  - first:
+      213: -258619583832257294
+    second: palette_interiors_x3_346
+  - first:
+      213: 2624402535859844329
+    second: palette_interiors_x3_347
+  - first:
+      213: 4799870199846671628
+    second: palette_interiors_x3_348
+  - first:
+      213: -6830171840792920453
+    second: palette_interiors_x3_349
+  - first:
+      213: -2174984174350718085
+    second: palette_interiors_x3_350
+  - first:
+      213: -798707854835958512
+    second: palette_interiors_x3_351
+  - first:
+      213: 6397143738078960856
+    second: palette_interiors_x3_352
+  - first:
+      213: -605068858400020034
+    second: palette_interiors_x3_353
+  - first:
+      213: 263817837742049992
+    second: palette_interiors_x3_354
+  - first:
+      213: 6550130650185203307
+    second: palette_interiors_x3_355
+  - first:
+      213: -5632006195012333315
+    second: palette_interiors_x3_356
+  - first:
+      213: -6878149598003377257
+    second: palette_interiors_x3_357
+  - first:
+      213: -4941531452552605793
+    second: palette_interiors_x3_358
+  - first:
+      213: -6779102479366458105
+    second: palette_interiors_x3_359
+  - first:
+      213: 4810079756200441409
+    second: palette_interiors_x3_360
+  - first:
+      213: -7050241745136028529
+    second: palette_interiors_x3_361
+  - first:
+      213: 6862077338623189392
+    second: palette_interiors_x3_362
+  - first:
+      213: -7688078531122441299
+    second: palette_interiors_x3_363
+  - first:
+      213: -7293379239310221871
+    second: palette_interiors_x3_364
+  - first:
+      213: -7185276858737776293
+    second: palette_interiors_x3_365
+  - first:
+      213: -1361498584004567563
+    second: palette_interiors_x3_366
+  - first:
+      213: -1976364786005849575
+    second: palette_interiors_x3_367
+  - first:
+      213: 9162419335735642513
+    second: palette_interiors_x3_368
+  - first:
+      213: 7990850375763019167
+    second: palette_interiors_x3_369
+  - first:
+      213: 4939480033323005185
+    second: palette_interiors_x3_370
+  - first:
+      213: 9071581443347025370
+    second: palette_interiors_x3_371
+  - first:
+      213: -235415776778569730
+    second: palette_interiors_x3_372
+  - first:
+      213: 7620688681045537102
+    second: palette_interiors_x3_373
+  - first:
+      213: -7248338350925806954
+    second: palette_interiors_x3_374
+  - first:
+      213: 5679007916820879608
+    second: palette_interiors_x3_375
+  - first:
+      213: 7840889087073017232
+    second: palette_interiors_x3_376
+  - first:
+      213: 2195585561848997599
+    second: palette_interiors_x3_377
+  - first:
+      213: 6894311527603442040
+    second: palette_interiors_x3_378
+  - first:
+      213: 5690566425528198128
+    second: palette_interiors_x3_379
+  - first:
+      213: 3187902696928254177
+    second: palette_interiors_x3_380
+  - first:
+      213: -3113880627797453112
+    second: palette_interiors_x3_381
+  - first:
+      213: -155101287599015053
+    second: palette_interiors_x3_382
+  - first:
+      213: 8494818857394780757
+    second: palette_interiors_x3_383
+  - first:
+      213: 2151893457217240426
+    second: palette_interiors_x3_384
+  - first:
+      213: -2790307986946049299
+    second: palette_interiors_x3_385
+  - first:
+      213: 2936367097212252719
+    second: palette_interiors_x3_386
+  - first:
+      213: -7501924926171462436
+    second: palette_interiors_x3_387
+  - first:
+      213: 4238621164030150983
+    second: palette_interiors_x3_388
+  - first:
+      213: 4525104442063704221
+    second: palette_interiors_x3_389
+  - first:
+      213: 2158536250698584299
+    second: palette_interiors_x3_390
+  - first:
+      213: 2184145479937598349
+    second: palette_interiors_x3_391
+  - first:
+      213: -2456223667466101908
+    second: palette_interiors_x3_392
+  - first:
+      213: 329497679970123912
+    second: palette_interiors_x3_393
+  - first:
+      213: -3012369931553299259
+    second: palette_interiors_x3_394
+  - first:
+      213: 5174356371462332552
+    second: palette_interiors_x3_395
+  - first:
+      213: 6550679915776053432
+    second: palette_interiors_x3_396
+  - first:
+      213: 3548894707935057912
+    second: palette_interiors_x3_397
+  - first:
+      213: 63621672195503889
+    second: palette_interiors_x3_398
+  - first:
+      213: -4422273515068549322
+    second: palette_interiors_x3_399
+  - first:
+      213: 5612155359682917064
+    second: palette_interiors_x3_400
+  - first:
+      213: -8049587662107964841
+    second: palette_interiors_x3_401
+  - first:
+      213: -2446901929290916091
+    second: palette_interiors_x3_402
+  - first:
+      213: -3064056098437212690
+    second: palette_interiors_x3_403
+  - first:
+      213: 6701619166200995772
+    second: palette_interiors_x3_404
+  - first:
+      213: 3604445220231372491
+    second: palette_interiors_x3_405
+  - first:
+      213: -2464415809668098884
+    second: palette_interiors_x3_406
+  - first:
+      213: 8862741424588116715
+    second: palette_interiors_x3_407
+  - first:
+      213: 5346296427167684676
+    second: palette_interiors_x3_408
+  - first:
+      213: -1961502437299427066
+    second: palette_interiors_x3_409
+  - first:
+      213: -4100141467324811879
+    second: palette_interiors_x3_410
+  - first:
+      213: -7669204763000872308
+    second: palette_interiors_x3_411
+  - first:
+      213: 3741814999905369654
+    second: palette_interiors_x3_412
+  - first:
+      213: 634393586908448128
+    second: palette_interiors_x3_413
+  - first:
+      213: 3507338720266249532
+    second: palette_interiors_x3_414
+  - first:
+      213: -3672907214517574752
+    second: palette_interiors_x3_415
+  - first:
+      213: 4095547970839978150
+    second: palette_interiors_x3_416
+  - first:
+      213: 6571307114894859565
+    second: palette_interiors_x3_417
+  - first:
+      213: 6814169217403831439
+    second: palette_interiors_x3_418
+  - first:
+      213: 1487412788613953004
+    second: palette_interiors_x3_419
+  - first:
+      213: 7881290261524367785
+    second: palette_interiors_x3_420
+  - first:
+      213: -3784915293668582800
+    second: palette_interiors_x3_421
+  - first:
+      213: 7405522485037860229
+    second: palette_interiors_x3_422
+  - first:
+      213: 7808962684957765988
+    second: palette_interiors_x3_423
+  - first:
+      213: -8960003881204948142
+    second: palette_interiors_x3_424
+  - first:
+      213: 8437501212356363176
+    second: palette_interiors_x3_425
+  - first:
+      213: -4332785261260977768
+    second: palette_interiors_x3_426
+  - first:
+      213: 5525506558362174111
+    second: palette_interiors_x3_427
+  - first:
+      213: -2954079704291025306
+    second: palette_interiors_x3_428
+  - first:
+      213: -8676914320010995503
+    second: palette_interiors_x3_429
+  - first:
+      213: -2013517498329105788
+    second: palette_interiors_x3_430
+  - first:
+      213: 2300345891494386508
+    second: palette_interiors_x3_431
+  - first:
+      213: 5016703965987296055
+    second: palette_interiors_x3_432
+  - first:
+      213: -3239444567234432915
+    second: palette_interiors_x3_433
+  - first:
+      213: 3848667544191460458
+    second: palette_interiors_x3_434
+  - first:
+      213: 1421092045284068267
+    second: palette_interiors_x3_435
+  - first:
+      213: -1016029711074928702
+    second: palette_interiors_x3_436
+  - first:
+      213: -3443923202821005747
+    second: palette_interiors_x3_437
+  - first:
+      213: -7586645968995856904
+    second: palette_interiors_x3_438
+  - first:
+      213: 2892409089089417638
+    second: palette_interiors_x3_439
+  - first:
+      213: -119323434134398616
+    second: palette_interiors_x3_440
+  - first:
+      213: 219896051384399067
+    second: palette_interiors_x3_441
+  - first:
+      213: -1057736772060535317
+    second: palette_interiors_x3_442
+  - first:
+      213: -2698347672101034149
+    second: palette_interiors_x3_443
+  - first:
+      213: 7175088368079083279
+    second: palette_interiors_x3_444
+  - first:
+      213: -8853492594522683004
+    second: palette_interiors_x3_445
+  - first:
+      213: -5163880942025913485
+    second: palette_interiors_x3_446
+  - first:
+      213: -5718601466131584932
+    second: palette_interiors_x3_447
+  - first:
+      213: 2350158438973487814
+    second: palette_interiors_x3_448
+  - first:
+      213: 553821492399749454
+    second: palette_interiors_x3_449
+  - first:
+      213: -289446139564716315
+    second: palette_interiors_x3_450
+  - first:
+      213: -1602899934936322841
+    second: palette_interiors_x3_451
+  - first:
+      213: -2995161392070882270
+    second: palette_interiors_x3_452
+  - first:
+      213: 5499959915340323161
+    second: palette_interiors_x3_453
+  - first:
+      213: 8087358596135987827
+    second: palette_interiors_x3_454
+  - first:
+      213: 21740804005106372
+    second: palette_interiors_x3_455
+  - first:
+      213: -4014545462673486324
+    second: palette_interiors_x3_456
+  - first:
+      213: 5457835539738983916
+    second: palette_interiors_x3_457
+  - first:
+      213: 2094270570799019404
+    second: palette_interiors_x3_458
+  - first:
+      213: 3650066287206074150
+    second: palette_interiors_x3_459
+  - first:
+      213: 750165245315270457
+    second: palette_interiors_x3_460
+  - first:
+      213: -3987987523370898525
+    second: palette_interiors_x3_461
+  - first:
+      213: -6355513733771060145
+    second: palette_interiors_x3_462
+  - first:
+      213: -2348944230025943644
+    second: palette_interiors_x3_463
+  - first:
+      213: 6600531079549321711
+    second: palette_interiors_x3_464
+  - first:
+      213: 7445467144407460276
+    second: palette_interiors_x3_465
+  - first:
+      213: 6777018898158456427
+    second: palette_interiors_x3_466
+  - first:
+      213: 4602514270655206478
+    second: palette_interiors_x3_467
+  - first:
+      213: -1541779829022173440
+    second: palette_interiors_x3_468
+  - first:
+      213: -1727349347031483131
+    second: palette_interiors_x3_469
+  - first:
+      213: 4954228035817865036
+    second: palette_interiors_x3_470
+  - first:
+      213: 3836118116110473228
+    second: palette_interiors_x3_471
+  - first:
+      213: -2906955682119210445
+    second: palette_interiors_x3_472
+  - first:
+      213: 4558553468378256952
+    second: palette_interiors_x3_473
+  - first:
+      213: 8962531786076266224
+    second: palette_interiors_x3_474
+  - first:
+      213: 1184864408253741088
+    second: palette_interiors_x3_475
+  - first:
+      213: 1145466970857536507
+    second: palette_interiors_x3_476
+  - first:
+      213: -3732482774416955407
+    second: palette_interiors_x3_477
+  - first:
+      213: 1532442162878980686
+    second: palette_interiors_x3_478
+  - first:
+      213: 553251422070447583
+    second: palette_interiors_x3_479
+  - first:
+      213: 1614949044636554700
+    second: palette_interiors_x3_480
+  - first:
+      213: 6082293433812150809
+    second: palette_interiors_x3_481
+  - first:
+      213: -5810597120064278281
+    second: palette_interiors_x3_482
+  - first:
+      213: -301798070340672014
+    second: palette_interiors_x3_483
+  - first:
+      213: 1443444544130757621
+    second: palette_interiors_x3_484
+  - first:
+      213: -6047637507873271191
+    second: palette_interiors_x3_485
+  - first:
+      213: -5511794909427023275
+    second: palette_interiors_x3_486
+  - first:
+      213: -8817917226184539375
+    second: palette_interiors_x3_487
+  - first:
+      213: -1546742893468143989
+    second: palette_interiors_x3_488
+  - first:
+      213: 3906397728260739325
+    second: palette_interiors_x3_489
+  - first:
+      213: 4459145387863691683
+    second: palette_interiors_x3_490
+  - first:
+      213: 7174904367841012259
+    second: palette_interiors_x3_491
+  - first:
+      213: -4717015591018591253
+    second: palette_interiors_x3_492
+  - first:
+      213: 3651998391830762016
+    second: palette_interiors_x3_493
+  - first:
+      213: -4875037345258326165
+    second: palette_interiors_x3_494
+  - first:
+      213: 1644783227844505773
+    second: palette_interiors_x3_495
+  - first:
+      213: 5480605370921099353
+    second: palette_interiors_x3_496
+  - first:
+      213: 9136938130529235201
+    second: palette_interiors_x3_497
+  - first:
+      213: 9203846236806823775
+    second: palette_interiors_x3_498
+  - first:
+      213: 3526037442232789786
+    second: palette_interiors_x3_499
+  - first:
+      213: -4156080264642345427
+    second: palette_interiors_x3_500
+  - first:
+      213: 5477255503211375052
+    second: palette_interiors_x3_501
+  - first:
+      213: -4982145604526164876
+    second: palette_interiors_x3_502
+  - first:
+      213: 1799713733561891138
+    second: palette_interiors_x3_503
+  - first:
+      213: -3084224347154375360
+    second: palette_interiors_x3_504
+  - first:
+      213: -1631908639926958530
+    second: palette_interiors_x3_505
+  - first:
+      213: -7550339484839647994
+    second: palette_interiors_x3_506
+  - first:
+      213: -6504750662056222796
+    second: palette_interiors_x3_507
+  - first:
+      213: 7312470157729736532
+    second: palette_interiors_x3_508
+  - first:
+      213: -1334414798317263019
+    second: palette_interiors_x3_509
+  - first:
+      213: 5388778922478697608
+    second: palette_interiors_x3_510
+  - first:
+      213: -6127369938848100112
+    second: palette_interiors_x3_511
+  - first:
+      213: -4183757098009982063
+    second: palette_interiors_x3_512
+  - first:
+      213: 6840480451075158534
+    second: palette_interiors_x3_513
+  - first:
+      213: -1119701290018811970
+    second: palette_interiors_x3_514
+  - first:
+      213: 5417894866114327744
+    second: palette_interiors_x3_515
+  - first:
+      213: 5883889750466949178
+    second: palette_interiors_x3_516
+  - first:
+      213: -1379729376631842062
+    second: palette_interiors_x3_517
+  - first:
+      213: -890931891903938137
+    second: palette_interiors_x3_518
+  - first:
+      213: 3946717145155565625
+    second: palette_interiors_x3_519
+  - first:
+      213: 5462687420887713870
+    second: palette_interiors_x3_520
+  - first:
+      213: -899932070710846025
+    second: palette_interiors_x3_521
+  - first:
+      213: 3475751104232823987
+    second: palette_interiors_x3_522
+  - first:
+      213: 8307283713685006092
+    second: palette_interiors_x3_523
+  - first:
+      213: -7434984586944381608
+    second: palette_interiors_x3_524
+  - first:
+      213: 3698787313378365370
+    second: palette_interiors_x3_525
+  - first:
+      213: -4361187380423705114
+    second: palette_interiors_x3_526
+  - first:
+      213: -4363534862050514546
+    second: palette_interiors_x3_527
+  - first:
+      213: 1928567181060427449
+    second: palette_interiors_x3_528
+  - first:
+      213: -9040883738615383567
+    second: palette_interiors_x3_529
+  - first:
+      213: 2654227939502311232
+    second: palette_interiors_x3_530
+  - first:
+      213: -7746996201719103439
+    second: palette_interiors_x3_531
+  - first:
+      213: 6654841495575198437
+    second: palette_interiors_x3_532
+  - first:
+      213: -7710493165565894533
+    second: palette_interiors_x3_533
+  - first:
+      213: -6907237931408630088
+    second: palette_interiors_x3_534
+  - first:
+      213: 3004895156729189054
+    second: palette_interiors_x3_535
+  - first:
+      213: 3940311503090664972
+    second: palette_interiors_x3_536
+  - first:
+      213: -7432305026420692118
+    second: palette_interiors_x3_537
+  - first:
+      213: -860589082204792860
+    second: palette_interiors_x3_538
+  - first:
+      213: -2509035689493800070
+    second: palette_interiors_x3_539
+  - first:
+      213: 3076871187330310718
+    second: palette_interiors_x3_540
+  - first:
+      213: 541257052333882413
+    second: palette_interiors_x3_541
+  - first:
+      213: -3044962464270876263
+    second: palette_interiors_x3_542
+  - first:
+      213: -3359381025628699220
+    second: palette_interiors_x3_543
+  - first:
+      213: 3311084189798161660
+    second: palette_interiors_x3_544
+  - first:
+      213: 1300503753059921825
+    second: palette_interiors_x3_545
+  - first:
+      213: -1518450784582350358
+    second: palette_interiors_x3_546
+  - first:
+      213: 4152158004825290029
+    second: palette_interiors_x3_547
+  - first:
+      213: -8735199818567869122
+    second: palette_interiors_x3_548
+  - first:
+      213: -5930851251675083484
+    second: palette_interiors_x3_549
+  - first:
+      213: 5923337469227720124
+    second: palette_interiors_x3_550
+  - first:
+      213: -2083556500901652983
+    second: palette_interiors_x3_551
+  - first:
+      213: 4994177798613136075
+    second: palette_interiors_x3_552
+  - first:
+      213: 2565245626974252145
+    second: palette_interiors_x3_553
+  - first:
+      213: 1161843791352718305
+    second: palette_interiors_x3_554
+  - first:
+      213: -3449420563875695457
+    second: palette_interiors_x3_555
+  - first:
+      213: -4099578593357278343
+    second: palette_interiors_x3_556
+  - first:
+      213: 8811965837821677531
+    second: palette_interiors_x3_557
+  - first:
+      213: -4054785480023629200
+    second: palette_interiors_x3_558
+  - first:
+      213: -4717297465221677453
+    second: palette_interiors_x3_559
+  - first:
+      213: 8787288118436175538
+    second: palette_interiors_x3_560
+  - first:
+      213: -6757556015143895563
+    second: palette_interiors_x3_561
+  - first:
+      213: -4749019939462502146
+    second: palette_interiors_x3_562
+  - first:
+      213: -810439367676260779
+    second: palette_interiors_x3_563
+  - first:
+      213: -5449638450018452157
+    second: palette_interiors_x3_564
+  - first:
+      213: 3288849215144305463
+    second: palette_interiors_x3_565
+  - first:
+      213: 6159005007272658861
+    second: palette_interiors_x3_566
+  - first:
+      213: 7061735392360106230
+    second: palette_interiors_x3_567
+  - first:
+      213: 3754414348679850983
+    second: palette_interiors_x3_568
+  - first:
+      213: 5898334050797735043
+    second: palette_interiors_x3_569
+  - first:
+      213: 3575699386901804846
+    second: palette_interiors_x3_570
+  - first:
+      213: -1234735829224603811
+    second: palette_interiors_x3_571
+  - first:
+      213: 6110587141111179508
+    second: palette_interiors_x3_572
+  - first:
+      213: 8584108020167703310
+    second: palette_interiors_x3_573
+  - first:
+      213: -454967845199382152
+    second: palette_interiors_x3_574
+  - first:
+      213: -5843889507780820556
+    second: palette_interiors_x3_575
+  - first:
+      213: 6540592281173047291
+    second: palette_interiors_x3_576
+  - first:
+      213: 1583998782365136564
+    second: palette_interiors_x3_577
+  - first:
+      213: 6500945839360586239
+    second: palette_interiors_x3_578
+  - first:
+      213: 3527656261799179972
+    second: palette_interiors_x3_579
+  - first:
+      213: 6228598338602087978
+    second: palette_interiors_x3_580
+  - first:
+      213: 1894765050419057889
+    second: palette_interiors_x3_581
+  - first:
+      213: -5875353246693143456
+    second: palette_interiors_x3_582
+  - first:
+      213: -7040445584808525069
+    second: palette_interiors_x3_583
+  - first:
+      213: 1224313506078172913
+    second: palette_interiors_x3_584
+  - first:
+      213: -1866137428881048280
+    second: palette_interiors_x3_585
+  - first:
+      213: 2502916785163646708
+    second: palette_interiors_x3_586
+  - first:
+      213: -1260214345125106832
+    second: palette_interiors_x3_587
+  - first:
+      213: 82040709228171884
+    second: palette_interiors_x3_588
+  - first:
+      213: -3811248601540619939
+    second: palette_interiors_x3_589
+  - first:
+      213: -4800331714030970885
+    second: palette_interiors_x3_590
+  - first:
+      213: -7691685140498169173
+    second: palette_interiors_x3_591
+  - first:
+      213: 2781614597198238441
+    second: palette_interiors_x3_592
+  - first:
+      213: -6073938726232007777
+    second: palette_interiors_x3_593
+  - first:
+      213: -5490766731828400770
+    second: palette_interiors_x3_594
+  - first:
+      213: 7657161987865907889
+    second: palette_interiors_x3_595
+  - first:
+      213: 1241291611305897443
+    second: palette_interiors_x3_596
+  - first:
+      213: 2121974572102623877
+    second: palette_interiors_x3_597
+  - first:
+      213: 8908932490123674880
+    second: palette_interiors_x3_598
+  - first:
+      213: 1610777199982084133
+    second: palette_interiors_x3_599
+  - first:
+      213: -8807075922375604132
+    second: palette_interiors_x3_600
+  - first:
+      213: 6368652972229468956
+    second: palette_interiors_x3_601
+  - first:
+      213: -7177415290667461110
+    second: palette_interiors_x3_602
+  - first:
+      213: -3170014947044676313
+    second: palette_interiors_x3_603
+  - first:
+      213: -5395060907416783804
+    second: palette_interiors_x3_604
+  - first:
+      213: 687538172559990507
+    second: palette_interiors_x3_605
+  - first:
+      213: -941810177703838822
+    second: palette_interiors_x3_606
+  - first:
+      213: -7303703523979966962
+    second: palette_interiors_x3_607
+  - first:
+      213: -7332912057413200928
+    second: palette_interiors_x3_608
+  - first:
+      213: 6438934660019306222
+    second: palette_interiors_x3_609
+  - first:
+      213: -6281000200776085538
+    second: palette_interiors_x3_610
+  - first:
+      213: 587194264987695163
+    second: palette_interiors_x3_611
+  - first:
+      213: 2399575602121298730
+    second: palette_interiors_x3_612
+  - first:
+      213: -8240961476629197374
+    second: palette_interiors_x3_613
+  - first:
+      213: -4295381885579259853
+    second: palette_interiors_x3_614
+  - first:
+      213: 5024735192288069015
+    second: palette_interiors_x3_615
+  - first:
+      213: -2663545982021408839
+    second: palette_interiors_x3_616
+  - first:
+      213: -793853131955896061
+    second: palette_interiors_x3_617
+  - first:
+      213: -8102155642930844883
+    second: palette_interiors_x3_618
+  - first:
+      213: 6798443018694106281
+    second: palette_interiors_x3_619
+  - first:
+      213: -928183492309060600
+    second: palette_interiors_x3_620
+  - first:
+      213: -7210778805131656064
+    second: palette_interiors_x3_621
+  - first:
+      213: -4019347039632936535
+    second: palette_interiors_x3_622
+  - first:
+      213: 7324695799382906063
+    second: palette_interiors_x3_623
+  - first:
+      213: -4437056565136177793
+    second: palette_interiors_x3_624
+  - first:
+      213: -4742582633500093682
+    second: palette_interiors_x3_625
+  - first:
+      213: -8343105231354779914
+    second: palette_interiors_x3_626
+  - first:
+      213: 993468134534301522
+    second: palette_interiors_x3_627
+  - first:
+      213: -2182824797702945126
+    second: palette_interiors_x3_628
+  - first:
+      213: -991689737530971145
+    second: palette_interiors_x3_629
+  - first:
+      213: -1519639546399727866
+    second: palette_interiors_x3_630
+  - first:
+      213: -5045027546504149734
+    second: palette_interiors_x3_631
+  - first:
+      213: 41666299338887823
+    second: palette_interiors_x3_632
+  - first:
+      213: -3037032743876539523
+    second: palette_interiors_x3_633
+  - first:
+      213: -3053571305257853891
+    second: palette_interiors_x3_634
+  - first:
+      213: -2219672239279442170
+    second: palette_interiors_x3_635
+  - first:
+      213: -4597808365861447768
+    second: palette_interiors_x3_636
+  - first:
+      213: -7569245414380773237
+    second: palette_interiors_x3_637
+  - first:
+      213: -8468724379292094668
+    second: palette_interiors_x3_638
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 9
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: palette_interiors_x3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34b204b3b2e2bf80800000000000000
+      internalID: -8092156318984260547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 126
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b40cd6174b665b20800000000000000
+      internalID: 3122801344698385587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 126
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3584a70673576d740800000000000000
+      internalID: 5176453702411241555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 126
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b722fc71e8d32f0800000000000000
+      internalID: -991480110041105578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_4
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 126
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6719d70cbab4fe0800000000000000
+      internalID: -1203679632162720048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 117
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779b4a14dbf4912a0800000000000000
+      internalID: -6766289290878731913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 117
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901538514ef5cacc0800000000000000
+      internalID: -3698475760759910135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_7
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 117
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4481e652007806c0800000000000000
+      internalID: -4176965499036269493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_8
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 117
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d970ad06c70439780800000000000000
+      internalID: -8677521154067789923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_9
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 117
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c985e96cf0271d50800000000000000
+      internalID: 6707866438472141252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbf824d1d21ac610800000000000000
+      internalID: 1642145706546887626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_11
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 108
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e393a1a1ddda18a60800000000000000
+      internalID: 7674606405153339710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_12
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 108
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c089852ab74fdac90800000000000000
+      internalID: -7156795420979980276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_13
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 108
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbd16ec1da204770800000000000000
+      internalID: 8592915169621957617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_14
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 108
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2e487690158c190800000000000000
+      internalID: -7942008842034552116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_15
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 108
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae8b7ea8160524f0800000000000000
+      internalID: -854269851240526164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_16
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 108
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8a5ec5eb257eb50800000000000000
+      internalID: 6622352754627422390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87314d1094892d90800000000000000
+      internalID: -7122015581208758386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 99
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44ef33252bef7360800000000000000
+      internalID: 7169707676534826058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_19
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 99
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fee2207930a3080800000000000000
+      internalID: -9207042541093982307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8a3cb333da46370800000000000000
+      internalID: 8314961247590394048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_21
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 90
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359de7f877d8f3760800000000000000
+      internalID: 7439820654087428435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_22
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 90
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a438df96974f7ee0800000000000000
+      internalID: -1261210658388036446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7530efc941a6fb20800000000000000
+      internalID: 3167896726293984637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 81
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b2eae118ba4d0b0800000000000000
+      internalID: -5704746256917714059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_25
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 81
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac42c6828a0e0df30800000000000000
+      internalID: 4598422232382579914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafd6357ea4d09ba0800000000000000
+      internalID: -6084129250821611602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_27
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 72
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdfb6edfd281bf50800000000000000
+      internalID: 6895436402501877234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_28
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 72
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6352050c334820790800000000000000
+      internalID: -7565339066224335562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_29
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 72
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4868656b0df0e6450800000000000000
+      internalID: 6083817535710856836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_30
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 72
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f96a57e67eb8c30800000000000000
+      internalID: 4362835125644730142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a2f377af9a91780800000000000000
+      internalID: -8711745110963967465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_32
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 63
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02195401f8b7c65b0800000000000000
+      internalID: -5373784400976309984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_33
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 63
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6039f6dad32855a0800000000000000
+      internalID: -6532431836684406678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_34
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 63
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0cee81b0b8370c80800000000000000
+      internalID: -8356648252018332660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_35
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 63
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0060377250c306c0800000000000000
+      internalID: -4178284568850178034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5364d7d2802d03b10800000000000000
+      internalID: 1959296770470921781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_37
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 54
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5dc70f4aa1a696b0800000000000000
+      internalID: -5289862959457645219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_38
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 54
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d671d7cced8ed8000800000000000000
+      internalID: 39944015327336301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_39
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 54
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576e984cf80161c40800000000000000
+      internalID: 5482587806033897077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_40
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 54
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7754ee967983250800000000000000
+      internalID: 5924651791030777822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74faa92457e927900800000000000000
+      internalID: 680780720152162119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_42
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 45
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea3b99c8c29cfb80800000000000000
+      internalID: -8359645417232975134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_43
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 45
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d195b462b4a7f650800000000000000
+      internalID: 6266658492610089430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_44
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 45
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790d935766f3cebe0800000000000000
+      internalID: -1446711671006834537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_45
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 45
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09abfd333a6574fe0800000000000000
+      internalID: -1204899116348360048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_46
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 45
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9405baa66458f70800000000000000
+      internalID: 9188828038674008540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daaa74007898cfbf0800000000000000
+      internalID: -289205063140267347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 36
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561c943a30c2ad300800000000000000
+      internalID: 277582721172750693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_49
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 36
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30ffebe81e473e80800000000000000
+      internalID: -8198998727660146629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_50
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 36
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc81b78287f9959d0800000000000000
+      internalID: -2785019556127893300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_51
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 36
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc5d2c47aaeea0e0800000000000000
+      internalID: -2256608359007560455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_52
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 36
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380056c2cfa4ae2f0800000000000000
+      internalID: -942858725043666813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ce5c9bb09c2ecf0800000000000000
+      internalID: -224395979216524211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_54
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 27
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0057b4dcb82415a10800000000000000
+      internalID: 1896370086311851264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_55
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 27
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1d953c20e04c190800000000000000
+      internalID: -7943208437744545351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_56
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 27
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6f89a7a2661a500800000000000000
+      internalID: 405717774071559890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_57
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 27
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1bf2fb77cf42da0800000000000000
+      internalID: -5970369614747553337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcfa93f3c7c6a240800000000000000
+      internalID: 4802745697056783580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_59
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 18
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5663469ee027acf90800000000000000
+      internalID: -6932603268012689819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_60
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 18
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53773f4ce3d6def0800000000000000
+      internalID: -83646531164998817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_61
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 18
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be54431357ed8c90800000000000000
+      internalID: -7165817088085041483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_62
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 18
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36a2c69873934730800000000000000
+      internalID: 3982188641660347964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_63
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 18
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25d666d59626ed80800000000000000
+      internalID: -8221841644729215702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad1249b4a25fb5f0800000000000000
+      internalID: -738780946429239895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_65
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 9
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af183c66ce43c1520800000000000000
+      internalID: 2674070468692247034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_66
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 9
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae3b97ca218dd7e0800000000000000
+      internalID: -1739091860357693791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_67
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 9
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e7be55f15d325b0800000000000000
+      internalID: -5394233598097523114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85afe70adf7c90130800000000000000
+      internalID: 3533575274782194264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_69
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517fe5e71f5069110800000000000000
+      internalID: 1267206879916783381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palette_interiors_x3_70
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1563bab67e075b330800000000000000
+      internalID: 3726008405965092433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
