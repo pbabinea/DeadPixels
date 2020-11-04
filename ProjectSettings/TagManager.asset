@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Interactive
   - AreaTrigger
+  - PuzzleBlock
   layers:
   - Default
   - TransparentFX
