@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     //private Rigidbody2D rb;
     public float speed = 5f;
-
+    public FlashLight flashLight;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,14 @@ public class PlayerController : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
+
+        //get direction player is facing
+
+        //toggle flashlight
+        if (Input.GetButtonDown("ToggleLight")) 
+        {
+            flashLight.toggle();
+        }
 
         //L/R movement
         transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
