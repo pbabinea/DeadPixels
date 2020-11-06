@@ -8,6 +8,7 @@ TagManager:
   - AreaTrigger
   - PuzzleBlock
   - EventTrigger
+  - KILL
   layers:
   - Default
   - TransparentFX
