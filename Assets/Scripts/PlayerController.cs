@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Collections.Specialized; //may not be needed
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,6 +27,12 @@ public class PlayerController : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         //get direction player is facing
+        if (horizontalInput != 0 || verticalInput != 0)
+        {
+            Vector3 x = new Vector3(1 * horizontalInput, 0, 0);
+            Vector3 y = new Vector3(0, verticalInput, 0);
+            flashLight.turn(x, y);
+        }
 
         //toggle flashlight
         if (Input.GetButtonDown("ToggleLight")) 
@@ -33,6 +40,16 @@ public class PlayerController : MonoBehaviour
             flashLight.toggle();
         }
 
+        
+
+        //change direction facing
+
+    }
+
+    void FixedUpdate() 
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
         //L/R movement
         transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
         //rb.velocity = new Vector2(horizontalInput * speed * Time.deltaTime, rb.velocity.y);
@@ -62,6 +79,11 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("stair collision");
             col.gameObject.GetComponent<SceneTransition>().LoadNextScene();
+        }
+
+        if (col.gameObject.tag.Equals("KILL")) 
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
     private void OnTriggerExit2D(Collider2D col)
