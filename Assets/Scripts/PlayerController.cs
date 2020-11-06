@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,7 @@ public class PlayerController : MonoBehaviour
     //private Rigidbody2D rb;
     public float speed = 5f;
     private GameObject currInterObj;
+    public bool hasKey = false;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +34,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) && currInterObj.tag.Equals("PuzzleBlock"))
         {
             Debug.Log("F pressed");
-            currInterObj.GetComponent<PuzzleBlock>().interact(transform.position);
+            currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.gameObject.name);
         }
     }
 
@@ -58,5 +60,11 @@ public class PlayerController : MonoBehaviour
         {
             currInterObj = null;
         }
+    }
+    //pick up key
+    public void GetKey()
+    {
+        hasKey = true;
+        Debug.Log(hasKey);
     }
 }

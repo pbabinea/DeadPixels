@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Town.unity
     guid: 9c3bc7cfb63e022419ddce8b0b519d50
+  - enabled: 1
+    path: Assets/Scenes/Library Puzzle 1.unity
+    guid: 43ba68b8e2e947c4a850fb035ecc2c75
+  - enabled: 1
+    path: Assets/Scenes/DemoEnding.unity
+    guid: 5911358f8b2a5db40a2547c4b9d39c8c
+  - enabled: 1
+    path: Assets/Scenes/Library Puzzle 2.unity
+    guid: d92baf87cbf44fa4ab53c05433d71d2b
   m_configObjects: {}
