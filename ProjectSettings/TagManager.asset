@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Interactive
   - AreaTrigger
+  - KILL
   layers:
   - Default
   - TransparentFX
