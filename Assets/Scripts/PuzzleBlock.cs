@@ -7,11 +7,11 @@ public class PuzzleBlock : MonoBehaviour
 {
     private float speed = 5f;
     public float step;
-    private Vector3 targetPos = new Vector3(-2.19f, -0.58f, -7.5398f);
+    private Vector3 targetPos;// = new Vector3(-2.19f, -0.58f, -7.5398f);
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        targetPos = transform.position;
     }
 
     // Update is called once per frame
