@@ -39,14 +39,25 @@ public class PlayerController : MonoBehaviour
         {
             flashLight.toggle();
         }
+        if (currInterObj != null)
+        {
+            if (Input.GetKeyDown(KeyCode.F) && currInterObj.tag.Equals("DialogueTrigger"))
+            {
+                Debug.Log("F pressed; dialogue");
+                currInterObj.GetComponentInParent<DialogueTrigger>().TriggerDialogue();
+            }
+            if (Input.GetKeyDown(KeyCode.Space) && currInterObj.tag.Equals("DialogueTrigger"))
+            {
+                Debug.Log("Space pressed; continue dialogue");
+                currInterObj.GetComponentInParent<DialogueTrigger>().AdvanceDialogue();
+            }
 
-        
+        }
+            //change direction facing
 
-        //change direction facing
+        }
 
-    }
-
-    void FixedUpdate() 
+        void FixedUpdate() 
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
@@ -63,6 +74,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("F pressed");
             currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.gameObject.name);
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -71,6 +83,13 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.tag.Equals("PuzzleBlock"))
         {
             Debug.Log("PuzzleBlock collision");
+            currInterObj = col.gameObject;
+        }
+
+        //see text
+        if (col.gameObject.tag.Equals("DialogueTrigger"))
+        {
+            Debug.Log("Dialogue collision");
             currInterObj = col.gameObject;
         }
 
@@ -88,9 +107,10 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.tag.Equals("PuzzleBlock"))
-        {
+        if (col.gameObject.tag.Equals("PuzzleBlock") || col.gameObject.tag.Equals("DialogueTrigger"))
+        { 
             currInterObj = null;
+            Debug.Log(currInterObj);
         }
     }
     //pick up key
