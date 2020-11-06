@@ -113,6 +113,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log(currInterObj);
         }
     }
+    
     //pick up key
     public void GetKey()
     {

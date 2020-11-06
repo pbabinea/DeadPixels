@@ -44,7 +44,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.54488826, y: 0.026236996}
+  m_Offset: {x: -0.612203, y: 0.046724245}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -55,7 +55,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.21634066, y: 0.63729084}
+  m_Size: {x: 0.350972, y: 0.49095336}
   m_EdgeRadius: 0
 --- !u!1 &1524703183762123519
 GameObject:
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0045246333, y: -0.47448108}
+  m_Offset: {x: -0.004524648, y: -0.54764974}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -112,7 +112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6567029, y: 0.21021849}
+  m_Size: {x: 0.6567029, y: 0.35655612}
   m_EdgeRadius: 0
 --- !u!1 &1717891280158404707
 GameObject:
@@ -158,7 +158,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5448884, y: 0.037271753}
+  m_Offset: {x: 0.5990332, y: 0.05336882}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -169,7 +169,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2408297, y: 0.6130705}
+  m_Size: {x: 0.37253323, y: 0.48722038}
   m_EdgeRadius: 0
 --- !u!1 &6173181493689963472
 GameObject:
@@ -215,7 +215,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0073169023, y: 0.520399}
+  m_Offset: {x: -0.0073168874, y: 0.583324}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -226,7 +226,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.73366594, y: 0.19185126}
+  m_Size: {x: 0.73366594, y: 0.3177015}
   m_EdgeRadius: 0
 --- !u!1 &7007319072943533940
 GameObject:
@@ -391,7 +391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3730848643196175292, guid: 79d589e8ab691b94499118a8be7888eb, type: 3}
       propertyPath: m_InstanceId
-      value: -53500
+      value: -23642
       objectReference: {fileID: 0}
     - target: {fileID: 3730848643196175292, guid: 79d589e8ab691b94499118a8be7888eb, type: 3}
       propertyPath: m_SelfShadows
