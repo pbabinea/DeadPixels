@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 5f;
     private GameObject currInterObj;
     public bool hasKey = false;
+    public FlashLight flashLight;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,14 @@ public class PlayerController : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
+
+        //get direction player is facing
+
+        //toggle flashlight
+        if (Input.GetButtonDown("ToggleLight")) 
+        {
+            flashLight.toggle();
+        }
 
         //L/R movement
         transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
