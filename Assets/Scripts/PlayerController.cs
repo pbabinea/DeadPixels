@@ -53,9 +53,12 @@ public class PlayerController : MonoBehaviour
             }
 
         }
-            //change direction facing
-
+        if (Input.GetKeyDown(KeyCode.F) && currInterObj.tag.Equals("PuzzleBlock"))
+        {
+            Debug.Log("F pressed");
+            currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.gameObject.name);
         }
+    }
 
         void FixedUpdate() 
     {
@@ -68,13 +71,6 @@ public class PlayerController : MonoBehaviour
         //Up/Down movement
         transform.position = transform.position + new Vector3(0, verticalInput * speed * Time.deltaTime, 0);
         //rb.velocity = new Vector2(verticalInput * speed * Time.deltaTime, rb.velocity.x);
-
-        if (Input.GetKeyDown(KeyCode.F) && currInterObj.tag.Equals("PuzzleBlock"))
-        {
-            Debug.Log("F pressed");
-            currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.gameObject.name);
-        }
-
     }
 
     private void OnTriggerEnter2D(Collider2D col)

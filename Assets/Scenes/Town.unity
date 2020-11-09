@@ -440,7 +440,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!43 &638358077
+--- !u!43 &430386151
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45079,6 +45079,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6492919338090428382, guid: b8c44b0d7069dcb4eb0d486313e2cd81, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6492919338090428383, guid: b8c44b0d7069dcb4eb0d486313e2cd81, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.9344044
@@ -45136,6 +45140,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6492919338090428382, guid: b8c44b0d7069dcb4eb0d486313e2cd81, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6492919338090428383, guid: b8c44b0d7069dcb4eb0d486313e2cd81, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.9840355
@@ -45193,6 +45201,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6492919338090428382, guid: b8c44b0d7069dcb4eb0d486313e2cd81, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6492919338090428383, guid: b8c44b0d7069dcb4eb0d486313e2cd81, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.4919877
