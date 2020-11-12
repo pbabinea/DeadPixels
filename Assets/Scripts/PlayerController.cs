@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //rb = GetComponent<Rigidbody2D>();
+        transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerSpawnX"), PlayerPrefs.GetFloat("PlayerSpawnY"), PlayerPrefs.GetFloat("PlayerSpawnZ"));
     }
 
     // Update is called once per frame

@@ -20,6 +20,38 @@ public class SceneTransition : MonoBehaviour
 
     public void LoadNextScene()
     {
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene == "DemoMenu")
+        {
+            if (nextScene == "Bedroom") SetSpawn(6.34f, 0.31f, 1f);
+        }
+        if (currentScene == "PlayerHouse")
+        {
+            if (nextScene == "Bedroom") SetSpawn(-7.97f, -2.38f, 1f);
+            if (nextScene == "Town") SetSpawn(-3.44f, -1.24f, 1f);
+        }
+        if (currentScene == "Bedroom")
+        {
+            if (nextScene == "PlayerHouse") SetSpawn(-2.039f, 2.418f, 1f);
+        }
+        if (currentScene == "Town")
+        {
+            if (nextScene == "PlayerHouse") SetSpawn(-0.53f, -2.04f, 1f);
+            if (nextScene == "Library Puzzle 1") SetSpawn(-2.02f, -4.19f, 1f);
+        }
+        if (currentScene == "Library Puzzle 1" || currentScene == "Library Puzzle 2")
+        {
+            if (nextScene == "Town") SetSpawn(18.95f, 9.14f, 1f);
+            if (nextScene == "Library Puzzle 2") SetSpawn(4.17f, -2.75f, 1f);
+        }
+
         SceneManager.LoadScene(nextScene);
+    }
+
+    private void SetSpawn(float x, float y, float z)
+    {
+        PlayerPrefs.SetFloat("PlayerSpawnX", x);
+        PlayerPrefs.SetFloat("PlayerSpawnY", y);
+        PlayerPrefs.SetFloat("PlayerSpawnZ", z);
     }
 }
