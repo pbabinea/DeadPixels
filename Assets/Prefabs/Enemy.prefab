@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3249233077351002561}
   - component: {fileID: 3249233077351002565}
   - component: {fileID: 3249233077351002564}
+  - component: {fileID: 2790964646268739964}
+  - component: {fileID: 6538871868603121349}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -158,10 +160,48 @@ MonoBehaviour:
   m_GameObject: {fileID: 3249233077351002574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25388a545055f4d46a74b88807ff662c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d059438feac8664b8d057417fbb48c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.07
+  speed: 0
+  idle: 0
+  target: {fileID: 0}
+  LOS: {fileID: 0}
+  sceneLoad: {fileID: 0}
+  wayPoints: []
+  numOfWaypoints: 0
+  pt: 0
+--- !u!114 &2790964646268739964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249233077351002574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bda5a960242847b824b0e117191b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &6538871868603121349
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249233077351002574}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3dac265635fd593409ed9b6db6df5b4f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3249233077735375988
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,6 +214,7 @@ GameObject:
   - component: {fileID: 3249233077735375977}
   - component: {fileID: 3249233077735375990}
   - component: {fileID: 3075560356470199324}
+  - component: {fileID: 2428481714927084480}
   m_Layer: 0
   m_Name: Monster
   m_TagString: KILL
@@ -277,7 +318,7 @@ MonoBehaviour:
   - {x: -0.1149838, y: 0.21407688, z: 0}
   m_ShapePathHash: 138542539
   m_Mesh: {fileID: 0}
-  m_InstanceId: 63278
+  m_InstanceId: 46498
 --- !u!61 &3075560356470199324
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -304,3 +345,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.34, y: 0.46}
   m_EdgeRadius: 0
+--- !u!95 &2428481714927084480
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249233077735375988}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -9,6 +9,7 @@ TagManager:
   - PuzzleBlock
   - EventTrigger
   - KILL
+  - waypoint
   layers:
   - Default
   - TransparentFX
