@@ -90,6 +90,12 @@ public class PlayerController : MonoBehaviour
             currInterObj = col.gameObject;
         }
 
+        //pick up an item
+        if (col.gameObject.tag.Equals("Collectable"))
+        {
+            col.gameObject.GetComponent<CollectableBehaviour>().Action();
+        }
+
         //load new area
         if (col.gameObject.tag.Equals("AreaTrigger"))
         {
