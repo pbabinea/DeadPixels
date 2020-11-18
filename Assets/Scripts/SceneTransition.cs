@@ -48,6 +48,11 @@ public class SceneTransition : MonoBehaviour
         if (currentScene == "House1")
         {
             if (nextScene == "Town") SetSpawn(25.96f, -1.51f, 1f);
+            if (nextScene == "Basement1") SetSpawn(9.03f, -1.62f, 1f);
+        }
+        if (currentScene == "Basement1")
+        {
+            if (nextScene == "House1") SetSpawn(15.5f, 3.92f, 1f);
         }
 
         SceneManager.LoadScene(nextScene);
