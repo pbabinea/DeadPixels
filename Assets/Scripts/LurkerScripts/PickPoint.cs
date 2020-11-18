@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PickPoint : StateMachineBehaviour
 {
-    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        MonsterBehavior behavior = animator.gameObject.GetComponent<MonsterBehavior>();
+    public MonsterBehavior behavior;
+
+    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex){
+        behavior = animator.gameObject.GetComponent<MonsterBehavior>();
+        Debug.Log(behavior.spawn);
+        behavior.setMovement("waypoint");
+        Debug.Log("picking");
         behavior.nextPoint();
     }
-
-
 }

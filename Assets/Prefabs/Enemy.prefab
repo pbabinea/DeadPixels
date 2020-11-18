@@ -163,14 +163,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d059438feac8664b8d057417fbb48c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  idle: 0
-  target: {fileID: 0}
-  LOS: {fileID: 0}
-  sceneLoad: {fileID: 0}
+  speed: 0.1
+  idle: 1
+  player: {fileID: 0}
+  LOS: {fileID: 2790964646268739964}
   wayPoints: []
-  numOfWaypoints: 0
-  pt: 0
 --- !u!114 &2790964646268739964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +315,7 @@ MonoBehaviour:
   - {x: -0.1149838, y: 0.21407688, z: 0}
   m_ShapePathHash: 138542539
   m_Mesh: {fileID: 0}
-  m_InstanceId: 46498
+  m_InstanceId: 55190
 --- !u!61 &3075560356470199324
 BoxCollider2D:
   m_ObjectHideFlags: 0
