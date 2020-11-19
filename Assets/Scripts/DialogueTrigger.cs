@@ -18,6 +18,10 @@ public class DialogueTrigger : MonoBehaviour
         {
 			FindObjectOfType<DialogueManager>().DisplayNextSentence();
         }
+		else if (dialogue == null)
+        {
+			FindObjectOfType<GlobalControl>().dialogueOpen = false;
+		}
     }
 
 }

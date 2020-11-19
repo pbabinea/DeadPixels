@@ -11,13 +11,22 @@ public class PlayerController : MonoBehaviour
     //private Rigidbody2D rb;
     public float speed = 5f;
     private GameObject currInterObj;
-    public bool hasKey = false;
     public FlashLight flashLight;
+
+    public Animator dAnimator;
+
+    //player event bools
+    public bool hasKey;
+    public bool sawBook;
+    public int buttons;
 
     // Start is called before the first frame update
     void Start()
     {
-        //rb = GetComponent<Rigidbody2D>();
+        sawBook = GlobalControl.Instance.sawBook;
+        hasKey = GlobalControl.Instance.hasKey;
+        GlobalControl.Instance.buttons = buttons;
+
         transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerSpawnX"), PlayerPrefs.GetFloat("PlayerSpawnY"), PlayerPrefs.GetFloat("PlayerSpawnZ"));
     }
 
@@ -28,7 +37,7 @@ public class PlayerController : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         //get direction player is facing
-        if (horizontalInput != 0 || verticalInput != 0)
+        if ((horizontalInput != 0 || verticalInput != 0) && dAnimator.GetCurrentAnimatorStateInfo(0).IsName("DialogueBox_Close"))
         {
             Vector3 x = new Vector3(1 * horizontalInput, 0, 0);
             Vector3 y = new Vector3(0, verticalInput, 0);
@@ -42,10 +51,11 @@ public class PlayerController : MonoBehaviour
         }
         if (currInterObj != null)
         {
-            if (Input.GetKeyDown(KeyCode.F) && currInterObj.tag.Equals("DialogueTrigger"))
+            if (Input.GetKeyDown(KeyCode.F) && currInterObj.tag.Equals("DialogueTrigger") && dAnimator.GetCurrentAnimatorStateInfo(0).IsName("DialogueBox_Close"))
             {
                 Debug.Log("F pressed; dialogue");
                 currInterObj.GetComponentInParent<DialogueTrigger>().TriggerDialogue();
+                FindObjectOfType<GlobalControl>().dialogueOpen = true;
             }
             if (Input.GetKeyDown(KeyCode.Space) && currInterObj.tag.Equals("DialogueTrigger"))
             {
@@ -62,17 +72,19 @@ public class PlayerController : MonoBehaviour
     }
 
         void FixedUpdate() 
-    {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-        //L/R movement
-        transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
-        //rb.velocity = new Vector2(horizontalInput * speed * Time.deltaTime, rb.velocity.y);
+        {
+            if (dAnimator.GetCurrentAnimatorStateInfo(0).IsName("DialogueBox_Close")) { 
+                float horizontalInput = Input.GetAxis("Horizontal");
+                float verticalInput = Input.GetAxis("Vertical");
+                //L/R movement
+                transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
+                //rb.velocity = new Vector2(horizontalInput * speed * Time.deltaTime, rb.velocity.y);
 
-        //Up/Down movement
-        transform.position = transform.position + new Vector3(0, verticalInput * speed * Time.deltaTime, 0);
-        //rb.velocity = new Vector2(verticalInput * speed * Time.deltaTime, rb.velocity.x);
-    }
+                //Up/Down movement
+                transform.position = transform.position + new Vector3(0, verticalInput * speed * Time.deltaTime, 0);
+                //rb.velocity = new Vector2(verticalInput * speed * Time.deltaTime, rb.velocity.x);
+            }
+        }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -123,4 +135,13 @@ public class PlayerController : MonoBehaviour
         hasKey = true;
         Debug.Log(hasKey);
     }
+
+    public void SavePlayer()
+    {
+        GlobalControl.Instance.sawBook = sawBook;
+        GlobalControl.Instance.hasKey = hasKey;
+        GlobalControl.Instance.buttons = buttons;
+    }
+
+
 }
