@@ -3,33 +3,59 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.UI;
 
 public class FlashLight : MonoBehaviour
 {
-
-    private bool flashlightOn = false;
     public Light2D flashlight;
-    private float battery; //TODO implement
+    public float powerUsageRate;
+    public GameObject batteryText; //add battery text from dialouge
+
+    private bool flashlightOn = true;
+    private float battery;
+    private Text txt;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         //flashlight = this.gameObject.GetComponent<Light2D>();
+        battery = 100;
+        txt = batteryText.GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (flashlightOn) 
+        {
+            if (battery >= 0.0f)
+            {
+                Debug.Log("lowering");
+                battery = battery - (powerUsageRate * Time.deltaTime);
+            }
+            else
+            {
+                battery = 0.0f;
+                flashlightOn = false;
+                flashlight.intensity = 0;
+            }
+        }
+
+        txt.text = "Bat: " + (int) battery; //sets the battery number 
+
     }
 
     public void toggle() 
     {
-        flashlightOn = !flashlightOn;
-        if (flashlightOn)
-            flashlight.intensity = 0;
-        else flashlight.intensity = 1;
-
+        if (battery > 0)
+        {
+            flashlightOn = !flashlightOn;
+            if (flashlightOn)
+                flashlight.intensity = 1;
+            else flashlight.intensity = 0;
+        }
     }
 
     public void turn(Vector3 x, Vector3 y) 
@@ -68,6 +94,8 @@ public class FlashLight : MonoBehaviour
         }
     }
 
-    public void rotateDynamic() { }
-
+    public void addCharge(float charge) 
+    {
+        battery = battery + charge;
+    }
 }

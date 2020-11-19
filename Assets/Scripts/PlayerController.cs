@@ -44,6 +44,8 @@ public class PlayerController : MonoBehaviour
             flashLight.turn(x, y);
         }
 
+
+
         //FindObjectOfType<GlobalControl>().hasKey = true;
 
         //toggle flashlight
@@ -122,6 +124,13 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.tag.Equals("KILL")) 
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        if (col.gameObject.tag.Equals("Battery"))
+        {
+            Battery bat = col.gameObject.GetComponent<Battery>();
+            flashLight.addCharge(bat.getCharge());
+            Destroy(col.gameObject);
         }
     }
     private void OnTriggerExit2D(Collider2D col)

@@ -11,6 +11,7 @@ TagManager:
   - KILL
   - DialogueTrigger
   - Collectable
+  - Battery
   layers:
   - Default
   - TransparentFX
