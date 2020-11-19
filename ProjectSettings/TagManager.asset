@@ -12,6 +12,11 @@ TagManager:
   - DialogueTrigger
   - Collectable
   - Battery
+  - Wall
+  - PBLeft
+  - PBRight
+  - PBUp
+  - PBDown
   layers:
   - Default
   - TransparentFX

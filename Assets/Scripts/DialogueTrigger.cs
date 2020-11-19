@@ -15,12 +15,14 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Awake()
     {
-        if (FindObjectOfType<GlobalControl>().sawBook || FindObjectOfType<GlobalControl>().hasLibKey)
+        if (FindObjectOfType<GlobalControl>().sawBook || 
+			(FindObjectOfType<GlobalControl>().hasLibKey && this.gameObject.name.Equals("DoorKey")) || 
+			(FindObjectOfType<GlobalControl>().hasLibButton && this.gameObject.name.Equals("Button")))
         {
 			Destroy(target);
 			if (pickUppable) Destroy(this.gameObject);
 		}
-    }
+	}
     public void TriggerDialogue()
 	{
 		FindObjectOfType<DialogueManager>().StartDialogue(dialogue);

@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6394024908496167948}
   - component: {fileID: 6665147866644980483}
+  - component: {fileID: 7037266413659183004}
   m_Layer: 0
   m_Name: InteractL
-  m_TagString: PuzzleBlock
+  m_TagString: PBLeft
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +45,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.612203, y: 0.046724245}
+  m_Offset: {x: -0.612203, y: 0.008866169}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -55,8 +56,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.350972, y: 0.49095336}
+  m_Size: {x: 0.35097194, y: 0.16705553}
   m_EdgeRadius: 0
+--- !u!114 &7037266413659183004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601975578930146790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1621f544242ee2042ab038b7759dfb05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1524703183762123519
 GameObject:
   m_ObjectHideFlags: 0
@@ -67,9 +80,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4066623404936321060}
   - component: {fileID: 8810846972965138874}
+  - component: {fileID: 529333069744901810}
   m_Layer: 0
   m_Name: InteractD
-  m_TagString: PuzzleBlock
+  m_TagString: PBDown
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +115,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.004524648, y: -0.54764974}
+  m_Offset: {x: 0.0013822615, y: -0.54764974}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -112,8 +126,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6567029, y: 0.35655612}
+  m_Size: {x: 0.2762608, y: 0.35655618}
   m_EdgeRadius: 0
+--- !u!114 &529333069744901810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524703183762123519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1621f544242ee2042ab038b7759dfb05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1717891280158404707
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,9 +150,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4737234411883750923}
   - component: {fileID: 8622470572618380596}
+  - component: {fileID: 8307963621917893668}
   m_Layer: 0
   m_Name: InteractR
-  m_TagString: PuzzleBlock
+  m_TagString: PBRight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,7 +185,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5990332, y: 0.05336882}
+  m_Offset: {x: 0.5990332, y: 0.049162462}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -169,8 +196,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.37253323, y: 0.48722038}
+  m_Size: {x: 0.3725332, y: 0.14649692}
   m_EdgeRadius: 0
+--- !u!114 &8307963621917893668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717891280158404707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1621f544242ee2042ab038b7759dfb05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6173181493689963472
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,9 +220,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7691372124162386146}
   - component: {fileID: 7042259882692838343}
+  - component: {fileID: 5489397255802187953}
   m_Layer: 0
   m_Name: InteractU
-  m_TagString: PuzzleBlock
+  m_TagString: PBUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,7 +255,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0073168874, y: 0.583324}
+  m_Offset: {x: 0.007090129, y: 0.583324}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -226,8 +266,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.73366594, y: 0.3177015}
+  m_Size: {x: 0.3265726, y: 0.31770146}
   m_EdgeRadius: 0
+--- !u!114 &5489397255802187953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6173181493689963472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1621f544242ee2042ab038b7759dfb05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7007319072943533940
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,7 +408,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7844866f453f65e46880f82870c593e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  step: 0
+  leftEnabled: 1
+  rightEnabled: 1
+  upEnabled: 1
+  downEnabled: 1
 --- !u!50 &1580700211
 Rigidbody2D:
   serializedVersion: 4
@@ -365,9 +420,9 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7007319072943533940}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -391,7 +446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3730848643196175292, guid: 79d589e8ab691b94499118a8be7888eb, type: 3}
       propertyPath: m_InstanceId
-      value: -9534
+      value: -97156
       objectReference: {fileID: 0}
     - target: {fileID: 3730848643196175292, guid: 79d589e8ab691b94499118a8be7888eb, type: 3}
       propertyPath: m_SelfShadows

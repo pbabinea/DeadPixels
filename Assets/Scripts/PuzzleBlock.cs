@@ -5,39 +5,74 @@ using UnityEngine;
 
 public class PuzzleBlock : MonoBehaviour
 {
-    private float speed = 5f;
-    public float step;
+    private float speed = 20f;
+    private float step;
     private Vector3 targetPos;// = new Vector3(-2.19f, -0.58f, -7.5398f);
+    private Rigidbody2D rb;
+
+    [SerializeField] private bool leftEnabled = true;
+    [SerializeField] private bool rightEnabled = true;
+    [SerializeField] private bool upEnabled = true;
+    [SerializeField] private bool downEnabled = true;
+
     // Start is called before the first frame update
     void Awake()
     {
+        Debug.Log("rightEnabledOnStart: " + rightEnabled);
         targetPos = transform.position;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         step = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
+        rb.MovePosition(Vector3.MoveTowards(transform.position, targetPos, step));
     }
 
     public void interact(string name)
     {
         Debug.Log(name);
+        Debug.Log("rightEnabled: " + rightEnabled);
         //Debug.Log("player pos: " + pos + "block pos: " + transform.position);
         //Vector2 sz = this.gameObject.GetComponent<BoxCollider2D>().size;
-        if (name == "InteractR") //push left
-            targetPos = transform.position + new Vector3(-1, 0, 0);
-        else if (name == "InteractL") //push right
-            targetPos = transform.position + new Vector3(1, 0, 0);
-        else if (name == "InteractU") //push down
-            targetPos = transform.position + new Vector3(0, -1, 0);
-        else if (name == "InteractD") //push up
-            targetPos = transform.position + new Vector3(0, 1, 0);
+        if (name == "InteractR" && leftEnabled) //push left
+            targetPos = transform.position + Vector3.left;
+        else if (name == "InteractL" && rightEnabled) { //push right
+            Debug.Log("Pushing right");
+            targetPos = transform.position + Vector3.right;
+        }
+        else if (name == "InteractU" && downEnabled) //push down
+            targetPos = transform.position + Vector3.down;
+        else if (name == "InteractD" && upEnabled) //push up
+            targetPos = transform.position + Vector3.up;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        targetPos = transform.position;
+        //Debug.Log(collision.gameObject.tag);
+        //if (collision.gameObject.CompareTag("Wall")) 
+        //targetPos = transform.position;
+    }
+
+    public void SetRightEnabled(bool enabled)
+    {
+        Debug.Log("SetRightEnabled: " + enabled);
+        rightEnabled = enabled;
+    }
+    public void SetLeftEnabled(bool enabled)
+    {
+        Debug.Log("SetLeftEnabled: " + enabled);
+        leftEnabled = enabled;
+    }
+    public void SetUpEnabled(bool enabled)
+    {
+        Debug.Log("SetUpEnabled: " + enabled);
+        upEnabled = enabled;
+    }
+    public void SetDownEnabled(bool enabled)
+    {
+        Debug.Log("SetDownEnabled: " + enabled);
+        downEnabled = enabled;
     }
 }

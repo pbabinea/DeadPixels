@@ -79,10 +79,10 @@ public class PlayerController : MonoBehaviour
                 currInterObj.GetComponentInParent<DialogueTrigger>().AdvanceDialogue();
             }
         }
-        if (Input.GetKeyDown(KeyCode.F) && currInterObj.tag.Equals("PuzzleBlock"))
+        if (Input.GetKeyDown(KeyCode.F) && isPuzzleBlock(currInterObj.tag))
         {
-            Debug.Log("F pressed");
-            currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.gameObject.name);
+            Debug.Log("F pressed - " + currInterObj.name);
+            currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.name);
         }
     }
 
@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         //push block
-        if (col.gameObject.tag.Equals("PuzzleBlock"))
+        if (isPuzzleBlock(col.gameObject.tag))
         {
             Debug.Log("PuzzleBlock collision");
             currInterObj = col.gameObject;
@@ -143,10 +143,10 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.tag.Equals("PuzzleBlock") || col.gameObject.tag.Equals("DialogueTrigger"))
-        { 
+        if (isPuzzleBlock(col.gameObject.tag) || col.gameObject.tag.Equals("DialogueTrigger"))
+        {
+            Debug.Log("Trigger Exit: " + currInterObj.name);
             currInterObj = null;
-            Debug.Log(currInterObj);
         }
     }
 
@@ -158,5 +158,9 @@ public class PlayerController : MonoBehaviour
         GlobalControl.Instance.hasLibButton = hasLibButton;
     }
 
-
+    private bool isPuzzleBlock(string tag)
+    {
+        if (tag.Equals("PuzzleBlock") || tag.Equals("PBUp") || tag.Equals("PBDown") || tag.Equals("PBLeft") || tag.Equals("PBRight")) return true;
+        return false;
+    }
 }
