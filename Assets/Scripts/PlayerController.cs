@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public Animator dAnimator;
 
     //player event bools
-    public bool hasKey;
+    public bool hasLibKey;
     public bool sawBook;
     public int buttons;
 
@@ -24,7 +24,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         sawBook = GlobalControl.Instance.sawBook;
-        hasKey = GlobalControl.Instance.hasKey;
+        hasLibKey = GlobalControl.Instance.hasLibKey;
+        hasLibKey = GlobalControl.Instance.hasLibKey;
         GlobalControl.Instance.buttons = buttons;
 
         transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerSpawnX"), PlayerPrefs.GetFloat("PlayerSpawnY"), PlayerPrefs.GetFloat("PlayerSpawnZ"));
@@ -115,7 +116,6 @@ public class PlayerController : MonoBehaviour
         //load new area
         if (col.gameObject.tag.Equals("AreaTrigger"))
         {
-            Debug.Log("stair collision");
             col.gameObject.GetComponent<SceneTransition>().LoadNextScene();
         }
 
@@ -132,18 +132,11 @@ public class PlayerController : MonoBehaviour
             Debug.Log(currInterObj);
         }
     }
-    
-    //pick up key
-    public void GetKey()
-    {
-        hasKey = true;
-        Debug.Log(hasKey);
-    }
 
     public void SavePlayer()
     {
         GlobalControl.Instance.sawBook = sawBook;
-        GlobalControl.Instance.hasKey = hasKey;
+        GlobalControl.Instance.hasLibKey = hasLibKey;
         GlobalControl.Instance.buttons = buttons;
     }
 

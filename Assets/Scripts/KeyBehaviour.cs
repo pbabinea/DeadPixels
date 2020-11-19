@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KeyBehaviour : MonoBehaviour
 {
+    /*
     private void OnTriggerEnter2D(Collider2D col)
     {
         Debug.Log("collision");
@@ -13,4 +14,5 @@ public class KeyBehaviour : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    */
 }

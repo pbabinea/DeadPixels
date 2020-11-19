@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Basement1.unity
     guid: 437d0113493d33a479d54210e6456a8b
+  - enabled: 1
+    path: Assets/Scenes/Library Puzzle 3.unity
+    guid: 2f2a4ead81a163d4ca8f34cc02cf79ed
   m_configObjects: {}

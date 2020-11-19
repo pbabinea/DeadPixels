@@ -11,13 +11,15 @@ public class DialogueTrigger : MonoBehaviour
 	public bool setBoolValue;
 	public GameObject target;
 	public string boolName;
+	public bool pickUppable;
 
     private void Awake()
     {
-        if (FindObjectOfType<GlobalControl>().sawBook)
+        if (FindObjectOfType<GlobalControl>().sawBook || FindObjectOfType<GlobalControl>().hasLibKey)
         {
 			Destroy(target);
-        }
+			if (pickUppable) Destroy(this.gameObject);
+		}
     }
     public void TriggerDialogue()
 	{
@@ -40,9 +42,11 @@ public class DialogueTrigger : MonoBehaviour
 			case "destroyObject":
 				Destroy(target);
 				FindObjectOfType<GlobalControl>().SetBool(boolName, setBoolValue);
+				if (pickUppable) Destroy(this.gameObject);
 				break;
 			case "setBoolean":
 				FindObjectOfType<GlobalControl>().SetBool(boolName, setBoolValue);
+				if (pickUppable) Destroy(this.gameObject);
 				break;
 			default:
 				break;

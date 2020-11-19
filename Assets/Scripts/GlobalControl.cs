@@ -8,7 +8,7 @@ public class GlobalControl : MonoBehaviour
 
     // all the bools. oh boy
     public int buttons = 0;
-    public bool hasKey = false;
+    public bool hasLibKey = false;
     public bool sawBook = false;
     public bool house1Open = false;
 
@@ -32,8 +32,8 @@ public class GlobalControl : MonoBehaviour
         {
             case "sawBook":
                 return sawBook;
-            case "hasKey":
-                return hasKey;
+            case "hasLibKey":
+                return hasLibKey;
             default:
                 return false;
         }
@@ -46,8 +46,8 @@ public class GlobalControl : MonoBehaviour
             case "sawBook":
                 sawBook = value;
                 break;
-            case "hasKey":
-                hasKey = value;
+            case "hasLibKey":
+                hasLibKey = value;
                 break;
             case "house1Open":
                 house1Open = value;
