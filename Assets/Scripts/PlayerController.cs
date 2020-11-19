@@ -44,6 +44,8 @@ public class PlayerController : MonoBehaviour
             flashLight.turn(x, y);
         }
 
+        //FindObjectOfType<GlobalControl>().hasKey = true;
+
         //toggle flashlight
         if (Input.GetButtonDown("ToggleLight")) 
         {
@@ -55,14 +57,16 @@ public class PlayerController : MonoBehaviour
             {
                 Debug.Log("F pressed; dialogue");
                 currInterObj.GetComponentInParent<DialogueTrigger>().TriggerDialogue();
-                FindObjectOfType<GlobalControl>().dialogueOpen = true;
+                if (currInterObj.GetComponent<DialogueTrigger>().hasEvent)
+                {
+                    currInterObj.GetComponentInParent<DialogueTrigger>().TriggerEvent();
+                }
             }
             if (Input.GetKeyDown(KeyCode.Space) && currInterObj.tag.Equals("DialogueTrigger"))
             {
                 Debug.Log("Space pressed; continue dialogue");
                 currInterObj.GetComponentInParent<DialogueTrigger>().AdvanceDialogue();
             }
-
         }
         if (Input.GetKeyDown(KeyCode.F) && currInterObj.tag.Equals("PuzzleBlock"))
         {
