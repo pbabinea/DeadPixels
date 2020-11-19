@@ -40,7 +40,7 @@ public class DialogueTrigger : MonoBehaviour
 
         switch (eventType) {
 			case "destroyObject":
-				Destroy(target);
+				if (target != null) Destroy(target);
 				FindObjectOfType<GlobalControl>().SetBool(boolName, setBoolValue);
 				if (pickUppable) Destroy(this.gameObject);
 				break;

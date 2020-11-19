@@ -11,6 +11,7 @@ public class GlobalControl : MonoBehaviour
     public bool hasLibKey = false;
     public bool sawBook = false;
     public bool house1Open = false;
+    public bool hasLibButton = false;
 
     void Awake()
     {
@@ -34,6 +35,8 @@ public class GlobalControl : MonoBehaviour
                 return sawBook;
             case "hasLibKey":
                 return hasLibKey;
+            case "hasLibButton":
+                return hasLibButton;
             default:
                 return false;
         }
@@ -48,6 +51,9 @@ public class GlobalControl : MonoBehaviour
                 break;
             case "hasLibKey":
                 hasLibKey = value;
+                break;
+            case "hasLibButton":
+                hasLibButton = value;
                 break;
             case "house1Open":
                 house1Open = value;

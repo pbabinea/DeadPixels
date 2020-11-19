@@ -19,16 +19,24 @@ public class PlayerController : MonoBehaviour
     public bool hasLibKey;
     public bool sawBook;
     public int buttons;
+    public bool hasLibButton;
 
     // Start is called before the first frame update
     void Start()
     {
         sawBook = GlobalControl.Instance.sawBook;
         hasLibKey = GlobalControl.Instance.hasLibKey;
-        hasLibKey = GlobalControl.Instance.hasLibKey;
+        hasLibButton = GlobalControl.Instance.hasLibButton;
         GlobalControl.Instance.buttons = buttons;
 
         transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerSpawnX"), PlayerPrefs.GetFloat("PlayerSpawnY"), PlayerPrefs.GetFloat("PlayerSpawnZ"));
+
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene == "Town" && FindObjectOfType<GlobalControl>().hasLibButton)
+        {
+            Destroy(GameObject.Find("House1 Lock"));
+            GameObject.Find("House1 Window").transform.position += new Vector3(0, 0, 13);
+        }
     }
 
     // Update is called once per frame
@@ -138,6 +146,7 @@ public class PlayerController : MonoBehaviour
         GlobalControl.Instance.sawBook = sawBook;
         GlobalControl.Instance.hasLibKey = hasLibKey;
         GlobalControl.Instance.buttons = buttons;
+        GlobalControl.Instance.hasLibButton = hasLibButton;
     }
 
 
