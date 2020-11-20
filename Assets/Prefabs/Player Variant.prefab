@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 807614905}
   - component: {fileID: 807614906}
   m_Layer: 0
-  m_Name: Point Light 2D (2)
+  m_Name: FlashLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.474
   m_Color: {r: 1, g: 0.991596, b: 0.7877358, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashlight: {fileID: 807614906}
-  powerUsageRate: 0
+  powerUsageRate: 1
   batteryText: {fileID: 0}
 --- !u!1001 &1502687072
 PrefabInstance:
@@ -227,7 +227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3730848643196175292, guid: 79d589e8ab691b94499118a8be7888eb, type: 3}
       propertyPath: m_InstanceId
-      value: -3334
+      value: -40640
       objectReference: {fileID: 0}
     - target: {fileID: 3730848643196175292, guid: 79d589e8ab691b94499118a8be7888eb, type: 3}
       propertyPath: m_ShapePath.Array.data[1].x

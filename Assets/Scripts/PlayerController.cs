@@ -104,20 +104,25 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-        void FixedUpdate() 
-        {
-            if (dAnimator.GetCurrentAnimatorStateInfo(0).IsName("DialogueBox_Close")) { 
-                float horizontalInput = Input.GetAxis("Horizontal");
-                float verticalInput = Input.GetAxis("Vertical");
-                //L/R movement
-                transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
-                //rb.velocity = new Vector2(horizontalInput * speed * Time.deltaTime, rb.velocity.y);
+    void Awake()
+    {
+        
+    }
 
-                //Up/Down movement
-                transform.position = transform.position + new Vector3(0, verticalInput * speed * Time.deltaTime, 0);
-                //rb.velocity = new Vector2(verticalInput * speed * Time.deltaTime, rb.velocity.x);
-            }
+    void FixedUpdate() 
+    {
+        if (dAnimator.GetCurrentAnimatorStateInfo(0).IsName("DialogueBox_Close")) { 
+            float horizontalInput = Input.GetAxis("Horizontal");
+            float verticalInput = Input.GetAxis("Vertical");
+            //L/R movement
+            transform.position = transform.position + new Vector3(horizontalInput * speed * Time.deltaTime, 0, 0);
+            //rb.velocity = new Vector2(horizontalInput * speed * Time.deltaTime, rb.velocity.y);
+
+            //Up/Down movement
+            transform.position = transform.position + new Vector3(0, verticalInput * speed * Time.deltaTime, 0);
+            //rb.velocity = new Vector2(verticalInput * speed * Time.deltaTime, rb.velocity.x);
         }
+    }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -149,6 +154,7 @@ public class PlayerController : MonoBehaviour
 
         if (col.gameObject.tag.Equals("KILL")) 
         {
+            //PlayerPrefs.SetFloat("Battery", GlobalControl.Instance.currentBattery);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
