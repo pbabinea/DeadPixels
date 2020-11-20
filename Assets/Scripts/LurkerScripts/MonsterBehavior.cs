@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterBehavior : MonoBehaviour
+public class MonsterBehavior : MonoBehaviour //////////////////CHANGE target from TRANSFORM to POINT
 {
     public float speed;
     public bool idle = false;

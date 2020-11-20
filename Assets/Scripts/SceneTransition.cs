@@ -68,9 +68,6 @@ public class SceneTransition : MonoBehaviour
         {
             if (nextScene == "Library Puzzle 2") SetSpawn(4.17f, -2.75f, 1f);
         }
-
-        PlayerPrefs.SetFloat("Battery", GlobalControl.Instance.currentBattery);
-
         SceneManager.LoadScene(nextScene);
     }
 
