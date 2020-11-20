@@ -14,12 +14,10 @@ public class GlobalControl : MonoBehaviour
     [SerializeField] public bool house1Open = false;
     [SerializeField] public bool hasLibButton = false;
     [SerializeField] public bool hasFirstBat = false;
-    public bool flashlightOn = false;
 
-    void Start() 
-    {
-    
-    }
+    public bool flashlightOn = false;
+    public bool hasBasButton = false;
+
 
     void Awake()
     {
@@ -48,6 +46,8 @@ public class GlobalControl : MonoBehaviour
                 return hasLibButton;
             case "hasFirstBat":
                 return hasFirstBat;
+            case "hasBasButton":
+                return hasBasButton;
             default:
                 return false;
         }
@@ -68,6 +68,9 @@ public class GlobalControl : MonoBehaviour
                 break;
             case "hasFirstBat":
                 hasFirstBat = value;
+                break;
+            case "hasBasButton":
+                hasBasButton = value;
                 break;
             default:
                 break;
