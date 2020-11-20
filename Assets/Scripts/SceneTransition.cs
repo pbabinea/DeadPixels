@@ -68,6 +68,7 @@ public class SceneTransition : MonoBehaviour
         {
             if (nextScene == "Library Puzzle 2") SetSpawn(4.17f, -2.75f, 1f);
         }
+        GlobalControl.Instance.checkpointBattery = GlobalControl.Instance.currentBattery;
         SceneManager.LoadScene(nextScene);
     }
 
