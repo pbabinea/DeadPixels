@@ -18,7 +18,10 @@ public class PuzzleBlock : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        Debug.Log("rightEnabledOnStart: " + rightEnabled);
+        if (this.gameObject.name == "SpecialBlock2")
+        {
+            transform.position = new Vector3(PlayerPrefs.GetFloat("blockX"), PlayerPrefs.GetFloat("blockY"), PlayerPrefs.GetFloat("blockZ"));
+        }
         targetPos = transform.position;
         rb = GetComponent<Rigidbody2D>();
     }
