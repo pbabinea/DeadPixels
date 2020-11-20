@@ -7,11 +7,12 @@ public class GlobalControl : MonoBehaviour
     public static GlobalControl Instance;
 
     // all the bools. oh boy
-    public int buttons = 0;
-    public bool hasLibKey = false;
-    public bool sawBook = false;
-    public bool house1Open = false;
-    public bool hasLibButton = false;
+    [SerializeField] public int buttons = 0;
+    [SerializeField] public bool hasLibKey = false;
+    [SerializeField] public bool sawBook = false;
+    [SerializeField] public bool house1Open = false;
+    [SerializeField] public bool hasLibButton = false;
+    [SerializeField] public bool hasFirstBat = false;
 
     void Awake()
     {
@@ -37,6 +38,8 @@ public class GlobalControl : MonoBehaviour
                 return hasLibKey;
             case "hasLibButton":
                 return hasLibButton;
+            case "hasFirstBat":
+                return hasFirstBat;
             default:
                 return false;
         }
@@ -55,8 +58,8 @@ public class GlobalControl : MonoBehaviour
             case "hasLibButton":
                 hasLibButton = value;
                 break;
-            case "house1Open":
-                house1Open = value;
+            case "hasFirstBat":
+                hasFirstBat = value;
                 break;
             default:
                 break;

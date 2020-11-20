@@ -15,10 +15,12 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Awake()
     {
-        if (GlobalControl.Instance.sawBook || 
+        if (GlobalControl.Instance.sawBook && this.gameObject.name.Equals("Book")|| 
 			(GlobalControl.Instance.hasLibKey && this.gameObject.name.Equals("DoorKey")) || 
-			(GlobalControl.Instance.hasLibButton && this.gameObject.name.Equals("Button")))
+			(GlobalControl.Instance.hasLibButton && this.gameObject.name.Equals("Button")) ||
+			(GlobalControl.Instance.hasFirstBat && this.gameObject.name.Equals("FirstBattery")))
         {
+			Debug.Log("Destroying " + this.gameObject.name);
 			Destroy(target);
 			if (pickUppable) Destroy(this.gameObject);
 		}
@@ -49,8 +51,12 @@ public class DialogueTrigger : MonoBehaviour
 			case "setBoolean":
 				GlobalControl.Instance.SetBool(boolName, setBoolValue);
 				if (target != null) Destroy(target);
-				if (pickUppable) Destroy(this.gameObject);
-				break;
+				if (pickUppable)
+				{
+					Debug.Log("Picking up " + this.gameObject.name);
+					Destroy(this.gameObject);
+				}
+					break;
 			default:
 				break;
 		}

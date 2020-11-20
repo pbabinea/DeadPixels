@@ -86,6 +86,21 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("F pressed - " + currInterObj.name);
                 currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.name);
             }
+            if (Input.GetKeyDown(KeyCode.F) && currInterObj.CompareTag("Battery"))
+            {
+                if (currInterObj.name == "FirstBattery")
+                {
+                    Battery bat = currInterObj.GetComponent<Battery>();
+                    flashLight.addCharge(bat.getCharge());
+                    currInterObj.GetComponentInParent<DialogueTrigger>().TriggerEvent();
+                }
+                else
+                {
+                    Battery bat = currInterObj.GetComponent<Battery>();
+                    flashLight.addCharge(bat.getCharge());
+                    Destroy(currInterObj);
+                }
+            }
         }
     }
 
@@ -139,9 +154,7 @@ public class PlayerController : MonoBehaviour
 
         if (col.gameObject.tag.Equals("Battery"))
         {
-            Battery bat = col.gameObject.GetComponent<Battery>();
-            flashLight.addCharge(bat.getCharge());
-            Destroy(col.gameObject);
+            currInterObj = col.gameObject;
         }
     }
     private void OnTriggerExit2D(Collider2D col)
