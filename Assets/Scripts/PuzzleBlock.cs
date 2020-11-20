@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PuzzleBlock : MonoBehaviour
 {
-    private float speed = 20f;
+    private float speed = 5f;
     private float step;
     private Vector3 targetPos;// = new Vector3(-2.19f, -0.58f, -7.5398f);
     private Rigidbody2D rb;
@@ -51,8 +51,7 @@ public class PuzzleBlock : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Debug.Log(collision.gameObject.tag);
-        //if (collision.gameObject.CompareTag("Wall")) 
-        //targetPos = transform.position;
+        if (collision.gameObject.CompareTag("Wall")) targetPos = transform.position;
     }
 
     public void SetRightEnabled(bool enabled)
