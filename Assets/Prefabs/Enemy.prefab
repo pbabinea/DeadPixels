@@ -134,7 +134,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &3249233077351002565
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -168,6 +168,7 @@ MonoBehaviour:
   player: {fileID: 0}
   LOS: {fileID: 2790964646268739964}
   wayPoints: []
+  spawn: {x: 0, y: 0, z: 0}
 --- !u!114 &2790964646268739964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,7 +316,7 @@ MonoBehaviour:
   - {x: -0.1149838, y: 0.21407688, z: 0}
   m_ShapePathHash: 138542539
   m_Mesh: {fileID: 0}
-  m_InstanceId: 55190
+  m_InstanceId: 59584
 --- !u!61 &3075560356470199324
 BoxCollider2D:
   m_ObjectHideFlags: 0

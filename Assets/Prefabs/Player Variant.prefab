@@ -141,7 +141,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 55.15
   m_PointLightOuterAngle: 74.68
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 4.7849574
+  m_PointLightOuterRadius: 7
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -227,7 +227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3730848643196175292, guid: 79d589e8ab691b94499118a8be7888eb, type: 3}
       propertyPath: m_InstanceId
-      value: -2122
+      value: -21594
       objectReference: {fileID: 0}
     - target: {fileID: 3730848643196175292, guid: 79d589e8ab691b94499118a8be7888eb, type: 3}
       propertyPath: m_ShapePath.Array.data[1].x
