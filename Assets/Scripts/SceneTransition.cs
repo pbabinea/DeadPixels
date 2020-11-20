@@ -37,14 +37,32 @@ public class SceneTransition : MonoBehaviour
         if (currentScene == "Town")
         {
             if (nextScene == "PlayerHouse") SetSpawn(-0.53f, -2.04f, 1f);
-            if (nextScene == "Library Puzzle 1") SetSpawn(-2.02f, -4.19f, 1f);
+            if (nextScene == "Library Puzzle 1")
+            {
+                if (FindObjectOfType<GlobalControl>().hasLibKey) nextScene = "Library Puzzle 2";
+                SetSpawn(-2.02f, -4.19f, 1f);
+            }
+            if (nextScene == "House1") SetSpawn(0.99f, -3.38f, 1f);
         }
         if (currentScene == "Library Puzzle 1" || currentScene == "Library Puzzle 2")
         {
             if (nextScene == "Town") SetSpawn(18.95f, 9.14f, 1f);
             if (nextScene == "Library Puzzle 2") SetSpawn(4.17f, -2.75f, 1f);
+            if (nextScene == "Library Puzzle 3") SetSpawn(4.51f, 3.52f, 1f);
         }
-
+        if (currentScene == "House1")
+        {
+            if (nextScene == "Town") SetSpawn(25.96f, -1.51f, 1f);
+            if (nextScene == "Basement1") SetSpawn(9.03f, -1.62f, 1f);
+        }
+        if (currentScene == "Basement1")
+        {
+            if (nextScene == "House1") SetSpawn(15.5f, 3.92f, 1f);
+        }
+        if (currentScene == "Library Puzzle 3")
+        {
+            if (nextScene == "Library Puzzle 2") SetSpawn(4.17f, -2.75f, 1f);
+        }
         SceneManager.LoadScene(nextScene);
     }
 
