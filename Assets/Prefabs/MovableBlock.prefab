@@ -508,6 +508,10 @@ PrefabInstance:
       propertyPath: m_UseRendererSilhouette
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3730848643196175292, guid: 79d589e8ab691b94499118a8be7888eb, type: 3}
+      propertyPath: m_CastsShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4501762112884000601, guid: 79d589e8ab691b94499118a8be7888eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.49
