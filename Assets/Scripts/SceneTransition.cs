@@ -57,6 +57,7 @@ public class SceneTransition : MonoBehaviour
         }
         if (currentScene == "Basement1")
         {
+            //please
             if (nextScene == "House1")
             {
                 SetSpawn(15.5f, 3.92f, 1f);
