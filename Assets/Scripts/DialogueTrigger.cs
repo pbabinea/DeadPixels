@@ -15,9 +15,9 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Awake()
     {
-        if (FindObjectOfType<GlobalControl>().sawBook || 
-			(FindObjectOfType<GlobalControl>().hasLibKey && this.gameObject.name.Equals("DoorKey")) || 
-			(FindObjectOfType<GlobalControl>().hasLibButton && this.gameObject.name.Equals("Button")))
+        if (GlobalControl.Instance.sawBook || 
+			(GlobalControl.Instance.hasLibKey && this.gameObject.name.Equals("DoorKey")) || 
+			(GlobalControl.Instance.hasLibButton && this.gameObject.name.Equals("Button")))
         {
 			Destroy(target);
 			if (pickUppable) Destroy(this.gameObject);
@@ -43,11 +43,12 @@ public class DialogueTrigger : MonoBehaviour
         switch (eventType) {
 			case "destroyObject":
 				if (target != null) Destroy(target);
-				FindObjectOfType<GlobalControl>().SetBool(boolName, setBoolValue);
+				GlobalControl.Instance.SetBool(boolName, setBoolValue);
 				if (pickUppable) Destroy(this.gameObject);
 				break;
 			case "setBoolean":
-				FindObjectOfType<GlobalControl>().SetBool(boolName, setBoolValue);
+				GlobalControl.Instance.SetBool(boolName, setBoolValue);
+				if (target != null) Destroy(target);
 				if (pickUppable) Destroy(this.gameObject);
 				break;
 			default:

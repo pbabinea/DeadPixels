@@ -32,8 +32,10 @@ public class PlayerController : MonoBehaviour
         transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerSpawnX"), PlayerPrefs.GetFloat("PlayerSpawnY"), PlayerPrefs.GetFloat("PlayerSpawnZ"));
 
         string currentScene = SceneManager.GetActiveScene().name;
-        if (currentScene == "Town" && FindObjectOfType<GlobalControl>().hasLibButton)
+        Debug.Log("Stort - " + currentScene);
+        if (currentScene == "Town" && GlobalControl.Instance.hasLibButton)
         {
+            Debug.Log("Destroying House1 Lock");
             Destroy(GameObject.Find("House1 Lock"));
             GameObject.Find("House1 Window").transform.position += new Vector3(0, 0, 13);
         }
@@ -78,11 +80,12 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Space pressed; continue dialogue");
                 currInterObj.GetComponentInParent<DialogueTrigger>().AdvanceDialogue();
             }
-        }
-        if (Input.GetKeyDown(KeyCode.F) && isPuzzleBlock(currInterObj.tag))
-        {
-            Debug.Log("F pressed - " + currInterObj.name);
-            currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.name);
+
+            if (Input.GetKeyDown(KeyCode.F) && isPuzzleBlock(currInterObj.tag))
+            {
+                Debug.Log("F pressed - " + currInterObj.name);
+                currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.name);
+            }
         }
     }
 
@@ -118,9 +121,9 @@ public class PlayerController : MonoBehaviour
         }
 
         //pick up an item
-        if (col.gameObject.tag.Equals("Collectable"))
+        if (col.gameObject.tag.Equals("Battery"))
         {
-            col.gameObject.GetComponent<CollectableBehaviour>().Action();
+            currInterObj = col.gameObject;
         }
 
         //load new area
@@ -143,7 +146,7 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (isPuzzleBlock(col.gameObject.tag) || col.gameObject.tag.Equals("DialogueTrigger"))
+        if (isPuzzleBlock(col.gameObject.tag) || col.gameObject.tag.Equals("DialogueTrigger") || col.gameObject.tag.Equals("Battery"))
         {
             Debug.Log("Trigger Exit: " + currInterObj.name);
             currInterObj = null;
