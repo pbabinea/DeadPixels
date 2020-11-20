@@ -149,6 +149,7 @@ public class PlayerController : MonoBehaviour
 
         if (col.gameObject.tag.Equals("KILL")) 
         {
+            GlobalControl.Instance.currentBattery = GlobalControl.Instance.checkpointBattery;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
