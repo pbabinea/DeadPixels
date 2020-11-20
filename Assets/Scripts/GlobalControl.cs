@@ -8,11 +8,18 @@ public class GlobalControl : MonoBehaviour
 
     // all the bools. oh boy
     [SerializeField] public int buttons = 0;
+    public float currentBattery = 100.0f;
     [SerializeField] public bool hasLibKey = false;
     [SerializeField] public bool sawBook = false;
     [SerializeField] public bool house1Open = false;
     [SerializeField] public bool hasLibButton = false;
     [SerializeField] public bool hasFirstBat = false;
+    public bool flashlightOn = false;
+
+    void Start() 
+    {
+    
+    }
 
     void Awake()
     {
@@ -25,6 +32,7 @@ public class GlobalControl : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        //currentBattery = PlayerPrefs.GetFloat("Battery");
     }
 
 
