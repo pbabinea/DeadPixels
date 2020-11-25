@@ -29,8 +29,10 @@ public class PlayerController : MonoBehaviour
         hasLibButton = GlobalControl.Instance.hasLibButton;
         GlobalControl.Instance.buttons = buttons;
 
+        //spawn in from player pref spawn locations
         transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerSpawnX"), PlayerPrefs.GetFloat("PlayerSpawnY"), PlayerPrefs.GetFloat("PlayerSpawnZ"));
 
+        //Unlock House1 when you have the library button
         string currentScene = SceneManager.GetActiveScene().name;
         Debug.Log("Stort - " + currentScene);
         if (currentScene == "Town" && GlobalControl.Instance.hasLibButton)
@@ -55,8 +57,6 @@ public class PlayerController : MonoBehaviour
             flashLight.turn(x, y);
         }
 
-
-
         //FindObjectOfType<GlobalControl>().hasKey = true;
 
         //toggle flashlight
@@ -64,8 +64,11 @@ public class PlayerController : MonoBehaviour
         {
             flashLight.toggle();
         }
+
+        //check interactions
         if (currInterObj != null)
         {
+            //trigger dialogue
             if (Input.GetKeyDown(KeyCode.F) && currInterObj.tag.Equals("DialogueTrigger") && dAnimator.GetCurrentAnimatorStateInfo(0).IsName("DialogueBox_Close"))
             {
                 Debug.Log("F pressed; dialogue");
@@ -75,19 +78,22 @@ public class PlayerController : MonoBehaviour
                     currInterObj.GetComponentInParent<DialogueTrigger>().TriggerEvent();
                 }
             }
+            //continue dialogue
             if (Input.GetKeyDown(KeyCode.Space) && currInterObj.tag.Equals("DialogueTrigger"))
             {
                 Debug.Log("Space pressed; continue dialogue");
                 currInterObj.GetComponentInParent<DialogueTrigger>().AdvanceDialogue();
             }
-
+            //push puzzle block
             if (Input.GetKeyDown(KeyCode.F) && isPuzzleBlock(currInterObj.tag))
             {
                 Debug.Log("F pressed - " + currInterObj.name);
                 currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.name);
             }
+            //pick up battery
             if (Input.GetKeyDown(KeyCode.F) && currInterObj.CompareTag("Battery"))
             {
+                //special case of first battery. unlocks door and performs battery actions
                 if (currInterObj.name == "FirstBattery")
                 {
                     Battery bat = currInterObj.GetComponent<Battery>();
@@ -96,6 +102,7 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
+                    //add charge to player's flashlight and destroy the battery
                     Battery bat = currInterObj.GetComponent<Battery>();
                     flashLight.addCharge(bat.getCharge());
                     Destroy(currInterObj);
@@ -106,7 +113,8 @@ public class PlayerController : MonoBehaviour
 
         void FixedUpdate() 
         {
-            if (dAnimator.GetCurrentAnimatorStateInfo(0).IsName("DialogueBox_Close")) { 
+            //player movement. cannot move if paused or in dialogue
+            if (dAnimator.GetCurrentAnimatorStateInfo(0).IsName("DialogueBox_Close") && Time.timeScale != 0) { 
                 float horizontalInput = Input.GetAxis("Horizontal");
                 float verticalInput = Input.GetAxis("Vertical");
                 //L/R movement
@@ -121,22 +129,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        //push block
-        if (isPuzzleBlock(col.gameObject.tag))
-        {
-            Debug.Log("PuzzleBlock collision");
-            currInterObj = col.gameObject;
-        }
-
-        //see text
-        if (col.gameObject.tag.Equals("DialogueTrigger"))
-        {
-            Debug.Log("Dialogue collision");
-            currInterObj = col.gameObject;
-        }
-
-        //pick up an item
-        if (col.gameObject.tag.Equals("Battery"))
+        //set currInterObj
+        if (isInteractable(col.tag))
         {
             currInterObj = col.gameObject;
         }
@@ -147,20 +141,24 @@ public class PlayerController : MonoBehaviour
             col.gameObject.GetComponent<SceneTransition>().LoadNextScene();
         }
 
+        //pick up battery
+        if (col.gameObject.tag.Equals("Battery"))
+        {
+            currInterObj = col.gameObject;
+        }
+
+        //enemy kills player
         if (col.gameObject.tag.Equals("KILL")) 
         {
             GlobalControl.Instance.currentBattery = GlobalControl.Instance.checkpointBattery;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-
-        if (col.gameObject.tag.Equals("Battery"))
-        {
-            currInterObj = col.gameObject;
-        }
     }
+
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (isPuzzleBlock(col.gameObject.tag) || col.gameObject.tag.Equals("DialogueTrigger") || col.gameObject.tag.Equals("Battery"))
+        //unset currInterObj
+        if (isInteractable(col.tag))
         {
             Debug.Log("Trigger Exit: " + currInterObj.name);
             currInterObj = null;
@@ -179,5 +177,30 @@ public class PlayerController : MonoBehaviour
     {
         if (tag.Equals("PuzzleBlock") || tag.Equals("PBUp") || tag.Equals("PBDown") || tag.Equals("PBLeft") || tag.Equals("PBRight")) return true;
         return false;
+    }
+
+    //used to identify the various interactable objects
+    private bool isInteractable(string tag)
+    {
+        switch (tag)
+        {
+            case "Battery":
+                return true;
+            case "DialogueTrigger":
+                return true;
+            //all puzzle block tags:
+            case "PuzzleBlock":
+                return true;
+            case "PBUp":
+                return true;
+            case "PBLeft":
+                return true;
+            case "PBRight":
+                return true;
+            case "PBDown":
+                return true;
+            default:
+                return false;
+        }
     }
 }
