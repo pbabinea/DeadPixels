@@ -113,8 +113,9 @@ public class PlayerController : MonoBehaviour
 
         void FixedUpdate() 
         {
-            //player movement. cannot move if paused or in dialogue
-            if (dAnimator.GetCurrentAnimatorStateInfo(0).IsName("DialogueBox_Close") && Time.timeScale != 0) { 
+        //player movement. cannot move if paused or in dialogue
+        Debug.Log("current time scale: " + Time.timeScale);
+            if (dAnimator.GetCurrentAnimatorStateInfo(0).IsName("DialogueBox_Close")) { 
                 float horizontalInput = Input.GetAxis("Horizontal");
                 float verticalInput = Input.GetAxis("Vertical");
                 //L/R movement

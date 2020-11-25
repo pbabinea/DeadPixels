@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GlobalControl : MonoBehaviour
 {
@@ -10,16 +11,21 @@ public class GlobalControl : MonoBehaviour
     [SerializeField] public int buttons = 0;
     public float currentBattery = 100.0f;
     public float checkpointBattery = 15.0f;
-    [SerializeField] public bool hasLibKey = false;
-    [SerializeField] public bool sawBook = false;
-    [SerializeField] public bool house1Open = false;
-    [SerializeField] public bool hasLibButton = false;
-    [SerializeField] public bool hasFirstBat = false;
+    public bool hasLibKey = false;
+    public bool sawBook = false;
+    public bool house1Open = false;
+    public bool hasLibButton = false;
+    public bool hasFirstBat = false;
     public bool flashlightOn = true;
     public bool hasBasButton = false;
 
+    private bool isPaused = false;
+    private bool wasUsingFlash;
+
     void Awake()
     {
+        Time.timeScale = 1;
+
         if (Instance == null)
         {
             DontDestroyOnLoad(gameObject);
@@ -49,6 +55,52 @@ public class GlobalControl : MonoBehaviour
             default:
                 return false;
         }
+    }
+
+    private void Update()
+    {
+        Debug.Log("GlobalControl time scale: " + Time.timeScale);
+        //use esc to pause/unpause
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!isPaused)
+            {
+                if (flashlightOn)
+                {
+                    flashlightOn = false;
+                    //prevent battery running down while in pause screen
+                    wasUsingFlash = true;
+                }
+                PauseGame();
+            }
+            else
+            {
+                if (wasUsingFlash)
+                {
+                    flashlightOn = true;
+                    wasUsingFlash = false;
+                }
+                UnpauseGame();
+                isPaused = false;
+            }
+        }
+    }
+
+    //pause game and load pause menu
+    void PauseGame()
+    {
+        Debug.Log("pause");
+        Time.timeScale = 0;
+        isPaused = true;
+        SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
+    }
+    //unpause and return to game
+    public void UnpauseGame()
+    {
+        Debug.Log("unpause");
+        SceneManager.UnloadSceneAsync("PauseMenu");
+        isPaused = false;
+        Time.timeScale = 1;
     }
 
     public void SetBool(string name, bool value)

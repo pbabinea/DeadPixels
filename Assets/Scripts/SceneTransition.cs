@@ -47,7 +47,15 @@ public class SceneTransition : MonoBehaviour
         if (currentScene == "Library Puzzle 1" || currentScene == "Library Puzzle 2")
         {
             if (nextScene == "Town") SetSpawn(18.95f, 9.14f, 1f);
-            if (nextScene == "Library Puzzle 2") SetSpawn(4.17f, -2.75f, 1f);
+            if (nextScene == "Library Puzzle 2")
+            {
+                // make sure the block stays put between library puzzle 1 and 2
+                Vector3 blockPos = FindObjectOfType<PuzzleBlock>().transform.position;
+                PlayerPrefs.SetFloat("blockX", blockPos.x);
+                PlayerPrefs.SetFloat("blockY", blockPos.y);
+                PlayerPrefs.SetFloat("blockZ", blockPos.z);
+                SetSpawn(4.17f, -2.75f, 1f);
+            }
             if (nextScene == "Library Puzzle 3") SetSpawn(4.51f, 3.52f, 1f);
         }
         if (currentScene == "House1")

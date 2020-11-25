@@ -31,6 +31,13 @@ public class PuzzleBlock : MonoBehaviour
     {
         step = speed * Time.deltaTime;
         rb.MovePosition(Vector3.MoveTowards(transform.position, targetPos, step));
+        if (this.gameObject.name == "SpecialBlock2")
+        {
+            //make sure the block in library puzzle 2 stays in place
+            PlayerPrefs.SetFloat("blockX", transform.position.x);
+            PlayerPrefs.SetFloat("blockY", transform.position.y);
+            PlayerPrefs.SetFloat("blockZ", transform.position.z);
+        }
     }
 
     public void interact(string name)
