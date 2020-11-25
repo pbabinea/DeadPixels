@@ -33,28 +33,30 @@ public class MonsterBehavior : MonoBehaviour //////////////////CHANGE target fro
     // Update is called once per frame
     void FixedUpdate()
     {
-        //handles monster movement
-        switch (moving) 
+        if (!GlobalControl.Instance.isPaused)
         {
-            case 0:
-                break;
-            case 1:
-                transform.position = Vector3.MoveTowards(transform.position, target.position, speed);
-                fsm.SetFloat("distance", Vector3.Distance(transform.position, target.position));
-                break;
-            case 2:
-                transform.position = Vector3.MoveTowards(transform.position, target.position, speed);
-                fsm.SetBool("canSee", LOS.checkLOS(this.gameObject, player));
-                break;
-            case 3:
-                transform.position = Vector3.MoveTowards(transform.position, lastSeen, speed);
-                fsm.SetFloat("distance", Vector3.Distance(transform.position, lastSeen));
-                break;
-            default:
-                moving = 0;
-                break;
+            //handles monster movement
+            switch (moving)
+            {
+                case 0:
+                    break;
+                case 1:
+                    transform.position = Vector3.MoveTowards(transform.position, target.position, speed);
+                    fsm.SetFloat("distance", Vector3.Distance(transform.position, target.position));
+                    break;
+                case 2:
+                    transform.position = Vector3.MoveTowards(transform.position, target.position, speed);
+                    fsm.SetBool("canSee", LOS.checkLOS(this.gameObject, player));
+                    break;
+                case 3:
+                    transform.position = Vector3.MoveTowards(transform.position, lastSeen, speed);
+                    fsm.SetFloat("distance", Vector3.Distance(transform.position, lastSeen));
+                    break;
+                default:
+                    moving = 0;
+                    break;
+            }
         }
-
 
     }
 

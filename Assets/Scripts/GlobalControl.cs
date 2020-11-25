@@ -19,7 +19,7 @@ public class GlobalControl : MonoBehaviour
     public bool flashlightOn = true;
     public bool hasBasButton = false;
 
-    private bool isPaused = false;
+    public bool isPaused = false;
     private bool wasUsingFlash;
 
     void Awake()
@@ -81,7 +81,6 @@ public class GlobalControl : MonoBehaviour
                     wasUsingFlash = false;
                 }
                 UnpauseGame();
-                isPaused = false;
             }
         }
     }
@@ -101,6 +100,15 @@ public class GlobalControl : MonoBehaviour
         SceneManager.UnloadSceneAsync("PauseMenu");
         isPaused = false;
         Time.timeScale = 1;
+    }
+
+    //reset the current scene
+    public void RestartLevel()
+    {
+        Debug.Log("restart");
+        UnpauseGame();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
     }
 
     public void SetBool(string name, bool value)

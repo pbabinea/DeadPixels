@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour
         {
         //player movement. cannot move if paused or in dialogue
         Debug.Log("current time scale: " + Time.timeScale);
-            if (dAnimator.GetCurrentAnimatorStateInfo(0).IsName("DialogueBox_Close")) { 
+            if (dAnimator.GetCurrentAnimatorStateInfo(0).IsName("DialogueBox_Close") && !GlobalControl.Instance.isPaused) { 
                 float horizontalInput = Input.GetAxis("Horizontal");
                 float verticalInput = Input.GetAxis("Vertical");
                 //L/R movement
