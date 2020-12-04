@@ -43,6 +43,7 @@ public class SceneTransition : MonoBehaviour
                     SetSpawn(-2.02f, -4.19f, 1f);
                 }
                 if (nextScene == "House1") SetSpawn(0.99f, -3.38f, 1f);
+                if (nextScene == "House2") SetSpawn(-4.01f, -3.65f, 1f);
                 break;
             case "Library Puzzle 1":
             case "Library Puzzle 2":
@@ -71,6 +72,9 @@ public class SceneTransition : MonoBehaviour
                 break;
             case "Library Puzzle 3":
                 if (nextScene == "Library Puzzle 2") SetSpawn(4.17f, -2.75f, 1f);
+                break;
+            case "House2":
+                if (nextScene == "Town") SetSpawn(-17.09f, -11.31f, 1f);
                 break;
             default:
                 break;
