@@ -64,11 +64,7 @@ public class SceneTransition : MonoBehaviour
                 if (nextScene == "Basement1") SetSpawn(9.03f, -1.62f, 1f);
                 break;
             case "Basement1":
-                if (nextScene == "House1")
-                {
-                    SetSpawn(15.5f, 3.92f, 1f);
-                    if (GlobalControl.Instance.hasBasButton) nextScene = "DemoEnding";
-                }
+                if (nextScene == "House1") SetSpawn(15.5f, 3.92f, 1f); 
                 break;
             case "Library Puzzle 3":
                 if (nextScene == "Library Puzzle 2") SetSpawn(4.17f, -2.75f, 1f);
