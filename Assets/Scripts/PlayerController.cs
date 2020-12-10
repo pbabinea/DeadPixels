@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
 
     public Animator dAnimator;
 
+    public Animator playerMovement;
+
     //player event bools
     public bool hasLibKey;
     public bool sawBook;
@@ -56,6 +58,59 @@ public class PlayerController : MonoBehaviour
             Vector3 y = new Vector3(0, verticalInput, 0);
             flashLight.turn(x, y);
         }
+
+        // Movement code
+
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+        {
+            playerMovement.SetBool("idleDown", false);
+            playerMovement.SetBool("movingDown", true);
+            Debug.Log("movingDown");
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+        {
+            playerMovement.SetBool("idleUp", false);
+            playerMovement.SetBool("movingUp", true);
+            Debug.Log("movingUp");
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        {
+            playerMovement.SetBool("idleLeft", false);
+            playerMovement.SetBool("movingLeft", true);
+            Debug.Log("movingLeft");
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        {
+            playerMovement.SetBool("idleRight", false);
+            playerMovement.SetBool("movingRight", true);
+            Debug.Log("movingRight");
+        }
+
+        if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S))
+        {
+            playerMovement.SetBool("movingDown", false);
+            playerMovement.SetBool("idleDown", true);
+            Debug.Log("idleDown");
+        }
+        if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.W))
+        {
+            playerMovement.SetBool("movingUp", false);
+            playerMovement.SetBool("idleUp", true);
+            Debug.Log("idleUp");
+        }
+        if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.A))
+        {
+            playerMovement.SetBool("movingLeft", false);
+            playerMovement.SetBool("idleLeft", true);
+            Debug.Log("idleLeft");
+        }
+        if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.D))
+        {
+            playerMovement.SetBool("movingRight", false);
+            playerMovement.SetBool("idleRight", true);
+            Debug.Log("idleRight");
+        }
+
 
         //FindObjectOfType<GlobalControl>().hasKey = true;
 
