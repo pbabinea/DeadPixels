@@ -9,6 +9,7 @@ public class SceneLoad : MonoBehaviour
     void Start()
     {
         allWayPoints = GameObject.FindGameObjectsWithTag("wayPoint");
+        GlobalControl.Instance.setBacklight();
     }
 
     // Update is called once per frame

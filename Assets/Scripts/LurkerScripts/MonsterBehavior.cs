@@ -85,8 +85,7 @@ public class MonsterBehavior : MonoBehaviour //////////////////CHANGE target fro
 
     public void nextPoint() 
     {
-        pt = (pt + 1) % numOfWaypoints; //sets the point the next one in path
-        Debug.Log(pt);
+        pt = (pt + 1) % numOfWaypoints;
     }
 
     private void setTarget()

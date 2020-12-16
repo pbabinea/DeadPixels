@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class GlobalControl : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class GlobalControl : MonoBehaviour
     public bool hasFirstBat = false;
     public bool flashlightOn = true;
     public bool hasBasButton = false;
+    public float backlight = 0.5f;
 
     public bool isPaused = false;
     private bool wasUsingFlash;
@@ -132,6 +134,15 @@ public class GlobalControl : MonoBehaviour
                 break;
             default:
                 break;
+        }
+    }
+
+    public void setBacklight() 
+    {
+        GameObject[] backLights = GameObject.FindGameObjectsWithTag("backLight");
+        foreach (GameObject l in backLights)
+        {
+            l.GetComponent<Light2D>().intensity = backlight;
         }
     }
 }
