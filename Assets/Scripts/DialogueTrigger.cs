@@ -20,7 +20,8 @@ public class DialogueTrigger : MonoBehaviour
 			(GlobalControl.Instance.hasLibButton && this.gameObject.name.Equals("Button")) ||
 			(GlobalControl.Instance.hasFirstBat && this.gameObject.name.Equals("FirstBattery")) ||
 			(GlobalControl.Instance.hasBasButton && this.gameObject.name.Equals("BasButton")) ||
-			(GlobalControl.Instance.hasArtButton && this.gameObject.name.Equals("ArtButton")))
+			(GlobalControl.Instance.hasArtButton && this.gameObject.name.Equals("ArtButton")) ||
+			(GlobalControl.Instance.hasMazeButton && this.gameObject.name.Equals("MazeButton")))
         {
 			Debug.Log("Destroying " + this.gameObject.name);
 			Destroy(target);

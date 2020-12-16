@@ -20,6 +20,7 @@ public class GlobalControl : MonoBehaviour
     public bool flashlightOn = true;
     public bool hasBasButton = false;
     public bool hasArtButton = false;
+    public bool hasMazeButton = false;
     public float backlight = 0.5f;
 
     public bool isPaused = false;
@@ -57,6 +58,8 @@ public class GlobalControl : MonoBehaviour
                 return hasBasButton;
             case "hasArtButton":
                 return hasArtButton;
+            case "hasMazeButton":
+                return hasMazeButton;
             default:
                 return false;
         }
@@ -137,6 +140,9 @@ public class GlobalControl : MonoBehaviour
                 break;
             case "hasArtButton":
                 hasArtButton = value;
+                break;
+            case "hasMazeButton":
+                hasMazeButton = value;
                 break;
             default:
                 break;
