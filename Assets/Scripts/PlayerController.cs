@@ -49,6 +49,12 @@ public class PlayerController : MonoBehaviour
             Destroy(GameObject.Find("House2 Lock"));
             GameObject.Find("House2 Window").transform.position += new Vector3(0, 0, 13);
         }
+        if (currentScene == "Town" && GlobalControl.Instance.hasArtButton)
+        {
+            Debug.Log("Destroying House3 Lock");
+            Destroy(GameObject.Find("House3 Lock"));
+            GameObject.Find("House3 Window").transform.position += new Vector3(0, 0, 13);
+        }
     }
 
     // Update is called once per frame
