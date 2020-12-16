@@ -18,6 +18,7 @@ TagManager:
   - PBRight
   - PBUp
   - PBDown
+  - backLight
   layers:
   - Default
   - TransparentFX
