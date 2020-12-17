@@ -17,6 +17,12 @@ public class SceneTransition : MonoBehaviour
             case "DemoMenu":
                 if (nextScene == "Bedroom") SetSpawn(6.34f, 0.31f, 1f);
                 break;
+            case "GameIntro":
+                if (nextScene == "Bedroom") SetSpawn(6.34f, 0.31f, 1f);
+                break;
+            case "Bedroom":
+                if (nextScene == "PlayerHouse") SetSpawn(-2.039f, 2.418f, 1f);
+                break;
             case "PlayerHouse":
                 if (nextScene == "Bedroom")
                 {
@@ -24,9 +30,6 @@ public class SceneTransition : MonoBehaviour
                     SetSpawn(-7.97f, -2.38f, 1f);
                 }
                 if (nextScene == "Town") SetSpawn(-3.44f, -1.24f, 1f);
-                break;
-            case "Bedroom":
-                if (nextScene == "PlayerHouse") SetSpawn(-2.039f, 2.418f, 1f);
                 break;
             case "Town":
                 if (nextScene == "PlayerHouse") SetSpawn(-0.53f, -2.04f, 1f);
