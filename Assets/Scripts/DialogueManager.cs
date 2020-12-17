@@ -10,6 +10,8 @@ public class DialogueManager : MonoBehaviour
 	public Text dialogueText;
 	public int typingFrames = 0;
 
+	//public AudioClip voice;
+
 	public Animator animator;
 
 	private Queue<string> sentences;
@@ -43,7 +45,7 @@ public class DialogueManager : MonoBehaviour
 			EndDialogue();
 			return;
 		}
-
+		//AudioSource.PlayClipAtPoint(voice, new Vector3(5, 1, 2));
 		string sentence = sentences.Dequeue();
 		StopAllCoroutines();
 		StartCoroutine(TypeSentence(sentence));

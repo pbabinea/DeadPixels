@@ -46,4 +46,5 @@ MonoBehaviour:
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
   typingFrames: 7
+  voice: {fileID: 8300000, guid: 3f0381d092d0c144c83c09d229ece3fa, type: 3}
   animator: {fileID: 0}

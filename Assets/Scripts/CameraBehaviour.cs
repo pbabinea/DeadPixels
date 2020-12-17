@@ -11,10 +11,22 @@ public class CameraBehaviour : MonoBehaviour
     public float minX;
     public float maxY;
     public float minY;
+    public Vector3 defaultPos;
+
+    public Camera cam;
+
+    private void Start()
+    {
+        cam = GetComponent<Camera>();
+        cam.clearFlags = CameraClearFlags.SolidColor;
+        if (defaultPos == new Vector3(0f, 0f, 0f)) defaultPos = new Vector3(0f, 0f, -10f);
+        transform.position = defaultPos;
+    }
 
     // Update is called once per frame
     void Update()
     {
+        cam.backgroundColor = Color.black;
         //camera centers on player, but stops on edge of bounds
         Vector3 currentPosition = transform.position;
         Vector3 targetPosition = player.position;

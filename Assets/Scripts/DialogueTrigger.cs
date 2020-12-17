@@ -13,6 +13,7 @@ public class DialogueTrigger : MonoBehaviour
 	public string boolName;
 	public bool pickUppable;
 	public AudioClip itemPickup;
+	public AudioSource soundToPlay;
 
 	private void Awake()
     {
@@ -40,6 +41,7 @@ public class DialogueTrigger : MonoBehaviour
         {
 			FindObjectOfType<DialogueManager>().DisplayNextSentence();
         }
+		if (soundToPlay != null) soundToPlay.Stop();
     }
 
 	public void TriggerEvent()
@@ -66,6 +68,9 @@ public class DialogueTrigger : MonoBehaviour
 					Destroy(this.gameObject);
 				}
 					break;
+			case "playSound":
+				soundToPlay.Play();
+				break;
 			default:
 				break;
 		}
