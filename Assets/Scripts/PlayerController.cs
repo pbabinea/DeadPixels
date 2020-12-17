@@ -252,6 +252,7 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.tag.Equals("KILL")) 
         {
             Debug.Log("Death Sound Play");
+            if (SceneManager.GetActiveScene().name == "House3" && GlobalControl.Instance.hasMazeButton) GlobalControl.Instance.SetBool("hasMazeButton", false);
             AudioSource.PlayClipAtPoint(deathSound, new Vector3(5, 1, 2));
             GlobalControl.Instance.currentBattery = GlobalControl.Instance.checkpointBattery;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

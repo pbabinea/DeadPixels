@@ -1272,8 +1272,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 114.7, y: 50.300003}
-  m_SizeDelta: {x: 207.09735, y: 76.07352}
+  m_AnchoredPosition: {x: 114.16, y: 56.8}
+  m_SizeDelta: {x: 207.09735, y: 96.233185}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1082793483
 MonoBehaviour:
@@ -1315,7 +1315,9 @@ MonoBehaviour:
     > F to
     interact
 
-    > Space to progress dialogue'
+    > Space to progress dialogue
+
+    > Esc to pause'
 --- !u!222 &1082793484
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1527,7 +1529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 88.2, y: 99.9}
+  m_AnchoredPosition: {x: 86.2, y: 110.6}
   m_SizeDelta: {x: 165.11923, y: 50.43918}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614858012
