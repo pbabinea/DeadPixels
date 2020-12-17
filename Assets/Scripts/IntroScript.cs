@@ -12,6 +12,8 @@ public class IntroScript : MonoBehaviour
     bool cutsceneDone = false;
     bool firstDialogueDone = false;
     bool dialogueDone = false;
+    public AudioClip lightOn;
+    public AudioClip lightOff;
 
     void Start()
     {
@@ -57,6 +59,7 @@ public class IntroScript : MonoBehaviour
     {
         Debug.Log("Starting first");
         FindObjectOfType<FadeController>().FadeIn();
+        AudioSource.PlayClipAtPoint(lightOn, new Vector3(5, 1, 2));
         Debug.Log("test");
         currDialogue = dialogueChunk2;
         currDialogue.GetComponentInParent<DialogueChunk>().TriggerCutsceneDialogue();
@@ -70,6 +73,7 @@ public class IntroScript : MonoBehaviour
         FindObjectOfType<FadeController>().FadeOut(2);
         yield return new WaitForEndOfFrame();
         Debug.Log("End of cutscene");
+        AudioSource.PlayClipAtPoint(lightOff, new Vector3(5, 1, 2));
         dialogueDone = false;
         cutsceneDone = true;
     }

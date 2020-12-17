@@ -1381,6 +1381,8 @@ MonoBehaviour:
   dialogueChunk1: {fileID: 944204597}
   dialogueChunk2: {fileID: 1043421427}
   dAnimator: {fileID: 135342178}
+  lightOn: {fileID: 8300000, guid: 23c462bfb873d2046a2ab7314b42e18a, type: 3}
+  lightOff: {fileID: 8300000, guid: 1db3f1c2743e5ae4a91dcd0db4b913e3, type: 3}
 --- !u!4 &904504048
 Transform:
   m_ObjectHideFlags: 0
@@ -1926,10 +1928,13 @@ MonoBehaviour:
     - I need my... what's the word in your language...
     - ...buttons. They look like buttons, let's go with that. I need my buttons.
       Should be four of them around this place.
+    - Once you find them all, I'll meet you back here in your bedroom.
     - Now I know what you're thinking. You float, why don't you do it yourself? You
       have legs!
     - ..........................
-    - LET ME REITERATE THAT I WOKE UP AS A SOCK MONKEY.
+    - 'LET ME REITERATE THAT.
+
+      I WOKE UP AS A SOCK MONKEY.'
     - I don't know how to use this form, I just want to go home. And I think you'll
       want me to go home too, because my being here has caused some... issues.
     - You'll see. It'll be fine, I'm sure. When I have my buttons, I can return the
@@ -1939,6 +1944,9 @@ MonoBehaviour:
     - Let's see, you should be prepared... there should be a clue to the first button
       location in the bedroom. Press F to interact with things, shift does something,
       you'll figure it out.
+    - Oh, and one last thing. Before you get out there and do your thing, adjust
+      your brightness level in the pause menu by pressing ESC. It should be pretty
+      dark.
     - (Hope you didn't blast through this intro, you'll get confused real fast...)
     - Okay! Enough tutorial stuff, get to it! Where was that light switch...?
 --- !u!4 &1043421429
@@ -1974,6 +1982,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 135342178}
+    - target: {fileID: 2256160333587875404, guid: 65f2e67e4f02da14f9a85cce8b6c8f05, type: 3}
+      propertyPath: typingFrames
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2256160333587875405, guid: 65f2e67e4f02da14f9a85cce8b6c8f05, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1920847

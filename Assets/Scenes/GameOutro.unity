@@ -1793,6 +1793,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 135342178}
+    - target: {fileID: 2256160333587875404, guid: 65f2e67e4f02da14f9a85cce8b6c8f05, type: 3}
+      propertyPath: typingFrames
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2256160333587875405, guid: 65f2e67e4f02da14f9a85cce8b6c8f05, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1920847
