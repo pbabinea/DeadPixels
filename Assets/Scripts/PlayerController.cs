@@ -201,7 +201,7 @@ public class PlayerController : MonoBehaviour
             //Debug.Log("Q DIR: " + q);
             Debug.Log("DIRECTION: " + rayDir);
             LayerMask mask = LayerMask.GetMask("BoxInteract");
-            hit = Physics2D.Raycast(transform.position, rayDir, 999.0f, mask, -100.0f, 100.0f);
+            hit = Physics2D.Raycast(transform.position, rayDir, 1f, mask, -100.0f, 100.0f);
             Debug.Log("HIT COLLIDER: " + hit.collider.gameObject.name);
             Debug.Log("HIT COLLIDER TRANSFORM: " + hit.collider.transform.position);
             Debug.DrawLine(transform.position, hit.collider.transform.position, Color.red);
