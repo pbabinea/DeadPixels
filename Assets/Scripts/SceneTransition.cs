@@ -28,7 +28,11 @@ public class SceneTransition : MonoBehaviour
                 if (nextScene == "Bedroom") SetSpawn(6.34f, 0.31f, 1f);
                 break;
             case "PlayerHouse":
-                if (nextScene == "Bedroom") SetSpawn(-7.97f, -2.38f, 1f);
+                if (nextScene == "Bedroom") 
+                {
+                    if (GlobalControl.Instance.hasAllButtons()) nextScene = "GameOutro";
+                    SetSpawn(-7.97f, -2.38f, 1f); 
+                }
                 if (nextScene == "Town") SetSpawn(-3.44f, -1.24f, 1f);
                 break;
             case "Bedroom":

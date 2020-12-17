@@ -140,4 +140,31 @@ public class GlobalControl : MonoBehaviour
                 break;
         }
     }
+
+    public void setBacklight() 
+    {
+        GameObject[] backLights = GameObject.FindGameObjectsWithTag("backLight");
+        foreach (GameObject l in backLights)
+        {
+            l.GetComponent<Light2D>().intensity = backlight;
+        }
+    }
+
+    public bool hasAllButtons()
+    {
+        return (hasLibButton && hasBasButton && hasArtButton && hasMazeButton);
+    }
+
+    //play an audio clip
+    /*
+    public static void PlaySound(string clip)
+    {
+        switch (clip)
+        {
+            case "pickup":
+                AudioSource.PlayClipAtPoint(itemPickup, new Vector3(5, 1, 2));
+                break;
+        }
+    }
+    */
 }
