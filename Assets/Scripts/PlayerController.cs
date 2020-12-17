@@ -130,7 +130,6 @@ public class PlayerController : MonoBehaviour
             Debug.Log("idleRight");
         }
 
-
         //FindObjectOfType<GlobalControl>().hasKey = true;
 
         //toggle flashlight
@@ -161,8 +160,16 @@ public class PlayerController : MonoBehaviour
             //push puzzle block
             if (Input.GetKeyDown(KeyCode.F) && isPuzzleBlock(currInterObj.tag))
             {
-                Debug.Log("F pressed - " + currInterObj.name);
-                currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.name);
+                This code is supposed to detect which block the PC is looking at. Only works if looking down.
+                RaycastHit2D hit;
+                Vector2 rayDir = getDirectionFacing();
+                int layerMask = -1;
+                hit = Physics2D.Raycast(transform.position, rayDir, 8.0f, layerMask, -100.0f, 100.0f);
+                Debug.Log(hit.collider.gameObject.name);
+                Debug.DrawRay(transform.position, rayDir,Color.green, 8.0f);
+                hit.collider.gameObject.GetComponentInParent<PuzzleBlock>().interact(currInterObj.name);
+                //Debug.Log("F pressed - " + currInterObj.name);
+                //currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.name);
             }
             //pick up battery
             if (Input.GetKeyDown(KeyCode.F) && currInterObj.CompareTag("Battery"))
@@ -280,5 +287,27 @@ public class PlayerController : MonoBehaviour
             default:
                 return false;
         }
+    }
+
+    private Vector2 getDirectionFacing() 
+    {
+        if(playerMovement.GetBool("idleDown")|| playerMovement.GetBool("movingDown")) 
+        {
+            return Vector2.down;
+        }
+        else if (playerMovement.GetBool("idleUp") || playerMovement.GetBool("movingUp"))
+        {
+            return Vector2.up;
+        }
+        else if (playerMovement.GetBool("idleLeft") || playerMovement.GetBool("movingLeft"))
+        {
+            return Vector2.left;
+        }
+        else if (playerMovement.GetBool("idleRight") || playerMovement.GetBool("movingRight"))
+        {
+            return Vector2.right;
+        }
+        return Vector2.zero;
+
     }
 }
