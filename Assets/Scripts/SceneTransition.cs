@@ -6,17 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
     public string nextScene;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject transitionAnimator;
 
     public void LoadNextScene()
     {
@@ -57,6 +47,8 @@ public class SceneTransition : MonoBehaviour
                     PlayerPrefs.SetFloat("blockY", blockPos.y);
                     PlayerPrefs.SetFloat("blockZ", blockPos.z);
                     SetSpawn(4.17f, -2.75f, 1f);
+                    GlobalControl.Instance.checkpointBattery = GlobalControl.Instance.currentBattery;
+                    SceneManager.LoadScene(nextScene);
                 }
                 if (nextScene == "Library Puzzle 3") SetSpawn(4.51f, 3.52f, 1f);
                 break;
@@ -82,7 +74,7 @@ public class SceneTransition : MonoBehaviour
         //set a checkpoint battery upon loading new scene
         if (currentScene != "DemoMenu") GlobalControl.Instance.checkpointBattery = GlobalControl.Instance.currentBattery;
         //load next scene
-        SceneManager.LoadScene(nextScene);
+        transitionAnimator.GetComponent<FadeTransition>().SceneFadeOut(nextScene);
     }
 
     //set the spawn point of the player
