@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
+    public Text sliderText;
+
+    private void Update()
+    {
+        sliderText.text = "" + GlobalControl.Instance.backlight;
+    }
     public void Unpause()
     {
         GlobalControl.Instance.UnpauseGame();

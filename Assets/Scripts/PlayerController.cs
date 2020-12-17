@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GlobalControl.Instance.setBacklight();
+
         sawBook = GlobalControl.Instance.sawBook;
         hasLibKey = GlobalControl.Instance.hasLibKey;
         hasLibButton = GlobalControl.Instance.hasLibButton;

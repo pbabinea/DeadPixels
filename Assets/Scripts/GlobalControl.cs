@@ -23,7 +23,7 @@ public class GlobalControl : MonoBehaviour
     public bool hasMazeButton = false;
     //public static AudioClip itemPickup;
 
-    public float backlight = 0.5f;
+    public float backlight = 0.2f;
 
     public bool isPaused = false;
     private bool wasUsingFlash;
