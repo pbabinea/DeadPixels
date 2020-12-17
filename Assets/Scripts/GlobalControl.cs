@@ -21,7 +21,7 @@ public class GlobalControl : MonoBehaviour
     public bool hasBasButton = false;
     public bool hasArtButton = false;
     public bool hasMazeButton = false;
-    public static AudioClip itemPickup;
+    //public static AudioClip itemPickup;
 
     public float backlight = 0.5f;
 
@@ -46,7 +46,7 @@ public class GlobalControl : MonoBehaviour
     private void Start()
     {
         //Load sound assets:
-        itemPickup = Resources.Load<AudioClip>("Assets/Music/Effects/Key");
+        //itemPickup = Resources.Load<AudioClip>("Music/Effects/Key");
         //Debug.Log("ITEM SOUND: " + itemPickup);
 
         //audioSrc = GetComponent<AudioSource>();
@@ -169,7 +169,7 @@ public class GlobalControl : MonoBehaviour
     }
 
     //play an audio clip
-    
+    /*
     public static void PlaySound(string clip)
     {
         switch (clip)
@@ -179,5 +179,5 @@ public class GlobalControl : MonoBehaviour
                 break;
         }
     }
-    
+    */
 }

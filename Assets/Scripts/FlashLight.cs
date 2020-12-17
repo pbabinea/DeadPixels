@@ -15,13 +15,15 @@ public class FlashLight : MonoBehaviour
     //private float battery;
     private Text txt;
 
-
+    private AudioClip flashOn;
 
     // Start is called before the first frame update
     void Start()
     {
         //flashlight = this.gameObject.GetComponent<Light2D>();
         txt = batteryText.GetComponent<Text>();
+
+        flashOn = Resources.Load<AudioClip>("Assets/Resources/OnFlashlight");
     }
 
     // Update is called once per frame
@@ -51,14 +53,21 @@ public class FlashLight : MonoBehaviour
             flashlight.intensity = 1;
     }
 
-    public void toggle() 
+    public void toggle(AudioClip flashOn, AudioClip flashOff) 
     {
         if (GlobalControl.Instance.currentBattery > 0)
         {
             GlobalControl.Instance.flashlightOn = !GlobalControl.Instance.flashlightOn;
             if (GlobalControl.Instance.flashlightOn)
+            {
+                AudioSource.PlayClipAtPoint(flashOn, new Vector3(5, 1, 2));
                 flashlight.intensity = 1;
-            else flashlight.intensity = 0;
+            }
+            else 
+            {
+                AudioSource.PlayClipAtPoint(flashOff, new Vector3(5, 1, 2));
+                flashlight.intensity = 0; 
+            }
         }
     }
 

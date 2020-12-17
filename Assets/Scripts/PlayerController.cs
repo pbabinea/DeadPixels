@@ -23,6 +23,10 @@ public class PlayerController : MonoBehaviour
     public int buttons;
     public bool hasLibButton;
 
+    public AudioClip deathSound;
+    public AudioClip flashOn;
+    public AudioClip flashOff;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -129,7 +133,7 @@ public class PlayerController : MonoBehaviour
         //toggle flashlight
         if (Input.GetButtonDown("ToggleLight")) 
         {
-            flashLight.toggle();
+            flashLight.toggle(flashOn, flashOff);
         }
 
         //check interactions
@@ -218,6 +222,8 @@ public class PlayerController : MonoBehaviour
         //enemy kills player
         if (col.gameObject.tag.Equals("KILL")) 
         {
+            Debug.Log("Death Sound Play");
+            AudioSource.PlayClipAtPoint(deathSound, new Vector3(5, 1, 2));
             GlobalControl.Instance.currentBattery = GlobalControl.Instance.checkpointBattery;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }

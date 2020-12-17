@@ -52,7 +52,7 @@ public class DialogueTrigger : MonoBehaviour
 				GlobalControl.Instance.SetBool(boolName, setBoolValue);
 				if (pickUppable)
 				{
-					AudioSource.PlayClipAtPoint(itemPickup, new Vector3(5, 1, 2), 999f);
+					AudioSource.PlayClipAtPoint(itemPickup, new Vector3(5, 1, 2), 1f);
 					Destroy(this.gameObject);
 				}
 				break;
@@ -62,7 +62,7 @@ public class DialogueTrigger : MonoBehaviour
 				if (pickUppable)
 				{
 					Debug.Log("Picking up " + this.gameObject.name);
-					AudioSource.PlayClipAtPoint(itemPickup, new Vector3(5, 1, 2), 999f);
+					AudioSource.PlayClipAtPoint(itemPickup, new Vector3(5, 1, 2), 1f);
 					Destroy(this.gameObject);
 				}
 					break;
