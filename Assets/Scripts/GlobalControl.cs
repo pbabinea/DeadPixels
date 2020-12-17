@@ -168,6 +168,11 @@ public class GlobalControl : MonoBehaviour
         }
     }
 
+    public bool hasAllButtons()
+    {
+        return (hasLibButton && hasBasButton && hasArtButton && hasMazeButton);
+    }
+
     //play an audio clip
     /*
     public static void PlaySound(string clip)
