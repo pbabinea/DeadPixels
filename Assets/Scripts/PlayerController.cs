@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
     public AudioClip flashOff;
     public AudioClip itemPickup;
 
+    public int dir; //1 = up, 2 = down, 3 = left, 4 = right
+
     // Start is called before the first frame update
     void Start()
     {
@@ -82,24 +84,28 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
+            dir = 2;
             playerMovement.SetBool("idleDown", false);
             playerMovement.SetBool("movingDown", true);
             Debug.Log("movingDown");
         }
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
+            dir = 1;
             playerMovement.SetBool("idleUp", false);
             playerMovement.SetBool("movingUp", true);
             Debug.Log("movingUp");
         }
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
+            dir = 3;
             playerMovement.SetBool("idleLeft", false);
             playerMovement.SetBool("movingLeft", true);
             Debug.Log("movingLeft");
         }
         if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
+            dir = 4;
             playerMovement.SetBool("idleRight", false);
             playerMovement.SetBool("movingRight", true);
             Debug.Log("movingRight");
@@ -157,20 +163,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Space pressed; continue dialogue");
                 currInterObj.GetComponentInParent<DialogueTrigger>().AdvanceDialogue();
             }
-            //push puzzle block
-            if (Input.GetKeyDown(KeyCode.F) && isPuzzleBlock(currInterObj.tag))
-            {
-                This code is supposed to detect which block the PC is looking at. Only works if looking down.
-                RaycastHit2D hit;
-                Vector2 rayDir = getDirectionFacing();
-                int layerMask = -1;
-                hit = Physics2D.Raycast(transform.position, rayDir, 8.0f, layerMask, -100.0f, 100.0f);
-                Debug.Log(hit.collider.gameObject.name);
-                Debug.DrawRay(transform.position, rayDir,Color.green, 8.0f);
-                hit.collider.gameObject.GetComponentInParent<PuzzleBlock>().interact(currInterObj.name);
-                //Debug.Log("F pressed - " + currInterObj.name);
-                //currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.name);
-            }
+            
             //pick up battery
             if (Input.GetKeyDown(KeyCode.F) && currInterObj.CompareTag("Battery"))
             {
@@ -190,6 +183,31 @@ public class PlayerController : MonoBehaviour
                     Destroy(currInterObj);
                 }
             }
+        }
+        //push puzzle block
+        if (Input.GetKeyDown(KeyCode.F))// && isPuzzleBlock(currInterObj.tag))
+        {
+            //This code is supposed to detect which block the PC is looking at. Only works if looking down.
+            RaycastHit2D hit;
+            //Vector2 rayDir = getDirectionFacing();
+
+            //Vector3 rayDir = flashLight.transform.eulerAngles;
+
+            //Quaternion q = flashLight.transform.rotation;
+            //Vector2 rayDir = new Vector2(q.x, q.y);
+
+            Vector2 rayDir = getDirectionFacing();
+
+            //Debug.Log("Q DIR: " + q);
+            Debug.Log("DIRECTION: " + rayDir);
+            LayerMask mask = LayerMask.GetMask("BoxInteract");
+            hit = Physics2D.Raycast(transform.position, rayDir, 999.0f, mask, -100.0f, 100.0f);
+            Debug.Log("HIT COLLIDER: " + hit.collider.gameObject.name);
+            Debug.Log("HIT COLLIDER TRANSFORM: " + hit.collider.transform.position);
+            Debug.DrawLine(transform.position, hit.collider.transform.position, Color.red);
+            hit.collider.gameObject.GetComponentInParent<PuzzleBlock>().interact(hit.collider.gameObject.name);
+            //Debug.Log("F pressed - " + currInterObj.name);
+            //currInterObj.GetComponentInParent<PuzzleBlock>().interact(currInterObj.name);
         }
     }
 
@@ -260,7 +278,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isPuzzleBlock(string tag)
     {
-        if (tag.Equals("PuzzleBlock") || tag.Equals("PBUp") || tag.Equals("PBDown") || tag.Equals("PBLeft") || tag.Equals("PBRight")) return true;
+        if (tag.Equals("PBUp") || tag.Equals("PBDown") || tag.Equals("PBLeft") || tag.Equals("PBRight")) return true;
         return false;
     }
 
@@ -291,7 +309,25 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 getDirectionFacing() 
     {
-        if(playerMovement.GetBool("idleDown")|| playerMovement.GetBool("movingDown")) 
+        switch (dir)
+        {
+            case 1:
+                return Vector2.up;
+                break;
+            case 2:
+                return Vector2.down;
+                break;
+            case 3:
+                return Vector2.left;
+                break;
+            case 4:
+                return Vector2.right;
+                break;
+            default:
+                return Vector2.zero;
+        }
+        /*
+        if (playerMovement.GetBool("idleDown") || playerMovement.GetBool("movingDown")) 
         {
             return Vector2.down;
         }
@@ -308,6 +344,6 @@ public class PlayerController : MonoBehaviour
             return Vector2.right;
         }
         return Vector2.zero;
-
+        */
     }
 }

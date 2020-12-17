@@ -77,7 +77,7 @@ public class GlobalControl : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("GlobalControl time scale: " + Time.timeScale);
+    
         //use esc to pause/unpause
         if (Input.GetKeyDown(KeyCode.Escape))
         {
