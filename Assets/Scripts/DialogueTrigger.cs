@@ -12,8 +12,9 @@ public class DialogueTrigger : MonoBehaviour
 	public GameObject target;
 	public string boolName;
 	public bool pickUppable;
+	public AudioClip itemPickup;
 
-    private void Awake()
+	private void Awake()
     {
         if (GlobalControl.Instance.sawBook && this.gameObject.name.Equals("Book")|| 
 			(GlobalControl.Instance.hasLibKey && this.gameObject.name.Equals("DoorKey")) || 
@@ -49,7 +50,11 @@ public class DialogueTrigger : MonoBehaviour
 			case "destroyObject":
 				if (target != null) Destroy(target);
 				GlobalControl.Instance.SetBool(boolName, setBoolValue);
-				if (pickUppable) Destroy(this.gameObject);
+				if (pickUppable)
+				{
+					AudioSource.PlayClipAtPoint(itemPickup, new Vector3(5, 1, 2), 999f);
+					Destroy(this.gameObject);
+				}
 				break;
 			case "setBoolean":
 				GlobalControl.Instance.SetBool(boolName, setBoolValue);
@@ -57,6 +62,7 @@ public class DialogueTrigger : MonoBehaviour
 				if (pickUppable)
 				{
 					Debug.Log("Picking up " + this.gameObject.name);
+					AudioSource.PlayClipAtPoint(itemPickup, new Vector3(5, 1, 2), 999f);
 					Destroy(this.gameObject);
 				}
 					break;

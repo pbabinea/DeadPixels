@@ -21,6 +21,8 @@ public class GlobalControl : MonoBehaviour
     public bool hasBasButton = false;
     public bool hasArtButton = false;
     public bool hasMazeButton = false;
+    public static AudioClip itemPickup;
+
     public float backlight = 0.5f;
 
     public bool isPaused = false;
@@ -41,7 +43,15 @@ public class GlobalControl : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        //Load sound assets:
+        itemPickup = Resources.Load<AudioClip>("Assets/Music/Effects/Key");
+        //Debug.Log("ITEM SOUND: " + itemPickup);
 
+        //audioSrc = GetComponent<AudioSource>();
+    }
+    
     public bool GetBool(string name)
     {
         switch (name)
@@ -157,4 +167,17 @@ public class GlobalControl : MonoBehaviour
             l.GetComponent<Light2D>().intensity = backlight;
         }
     }
+
+    //play an audio clip
+    
+    public static void PlaySound(string clip)
+    {
+        switch (clip)
+        {
+            case "pickup":
+                AudioSource.PlayClipAtPoint(itemPickup, new Vector3(5, 1, 2));
+                break;
+        }
+    }
+    
 }
