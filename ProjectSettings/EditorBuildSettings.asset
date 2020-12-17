@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/DemoMenu.unity
     guid: acbbbf909c17d464cb56ddf1ca1d0643
   - enabled: 1
+    path: Assets/Scenes/GameIntro.unity
+    guid: 6a036bd990463514781322dac420916f
+  - enabled: 1
     path: Assets/Scenes/Bedroom.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -44,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/House3.unity
     guid: aae6617f1b2607241a615e455a28da70
+  - enabled: 1
+    path: Assets/Scenes/GameOutro.unity
+    guid: e1221148bc5c93f4f8fedc2411095dd7
   m_configObjects: {}
