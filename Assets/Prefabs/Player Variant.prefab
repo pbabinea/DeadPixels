@@ -246,7 +246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3730848643196175292, guid: 79d589e8ab691b94499118a8be7888eb, type: 3}
       propertyPath: m_InstanceId
-      value: -29616
+      value: -2698
       objectReference: {fileID: 0}
     - target: {fileID: 3730848643196175292, guid: 79d589e8ab691b94499118a8be7888eb, type: 3}
       propertyPath: m_ShapePath.Array.data[1].x
@@ -461,6 +461,10 @@ PrefabInstance:
       propertyPath: flashOff
       value: 
       objectReference: {fileID: 8300000, guid: 1db3f1c2743e5ae4a91dcd0db4b913e3, type: 3}
+    - target: {fileID: 1556551299325146726, guid: e43988ea566724243b216149d14726fc, type: 3}
+      propertyPath: itemPickup
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f90ebcab78eff746b83bb8ad5829aba, type: 3}
     - target: {fileID: 6702923720834919230, guid: e43988ea566724243b216149d14726fc, type: 3}
       propertyPath: m_Offset.y
       value: -0.10215962

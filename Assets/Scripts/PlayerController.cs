@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip deathSound;
     public AudioClip flashOn;
     public AudioClip flashOff;
+    public AudioClip itemPickup;
 
     // Start is called before the first frame update
     void Start()
@@ -175,6 +176,7 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
+                    AudioSource.PlayClipAtPoint(itemPickup, new Vector3(5, 1, 2), 1f);
                     //add charge to player's flashlight and destroy the battery
                     Battery bat = currInterObj.GetComponent<Battery>();
                     flashLight.addCharge(bat.getCharge());
